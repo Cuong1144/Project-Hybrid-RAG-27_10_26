@@ -1,0 +1,9 @@
+/Tailieu/
+/tmp/
+/Pipeline_Cong_tra_cuu_van_ban_nha_truong.docx
+/Project_ChuyenDeCNTT.pdf
+/output/*
+!/output/he_thong_tong_the/
+/output/he_thong_tong_the/*
+!/output/he_thong_tong_the/*.md
+!/output/he_thong_tong_the/*.png

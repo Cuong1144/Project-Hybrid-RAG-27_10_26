@@ -1,0 +1,168 @@
+{
+  "created_at": "2026-11-09T04:12:03.137979+00:00",
+  "gguf": {
+    "repository": "Qwen/Qwen3-4B-GGUF",
+    "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+    "file": "Qwen3-4B-Q4_K_M.gguf",
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "bytes": 2497280256
+  },
+  "cases": [
+    {
+      "case": "team",
+      "query": "Chuẩn đầu ra CNTT yêu cầu kỹ năng làm việc theo nhóm như thế nào?",
+      "expected_phrases": [
+        "làm việc theo nhóm"
+      ],
+      "passed": true,
+      "http_status": 200,
+      "status": "partial",
+      "request_id": "7db53762ac1c4f62996ffc64d99a7089",
+      "answer": "4. Có kỹ năng thuyết trình, kỹ năng giao tiếp, làm việc theo nhóm. [E1]\n\nCó tinh thần ham học hỏi, nâng cao trình độ. [E4]",
+      "citations": [
+        {
+          "pdf_page": 2,
+          "http_status": 200,
+          "quote_matches_page": true,
+          "url": "/sources/file_828ac9132de4e18ddd4019cc?bundle_id=b_d1303694380dd1af5cdec379&page=2#page=2"
+        },
+        {
+          "pdf_page": 2,
+          "http_status": 200,
+          "quote_matches_page": true,
+          "url": "/sources/file_828ac9132de4e18ddd4019cc?bundle_id=b_d1303694380dd1af5cdec379&page=2#page=2"
+        }
+      ],
+      "timings": {
+        "retrieval_ms": 70.79,
+        "generation_ms": 8690.2,
+        "total_ms": 30834.32
+      },
+      "generation": {
+        "ready": true,
+        "model": "hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+        "digest": "3c4f22130d403283bb961721f2c4f83e4409afcbb7a7cd992f425c62b9304e35",
+        "runtime_version": "0.40.15",
+        "prompt_version": "utc-evidence-quotes-v3",
+        "attempts": 1,
+        "estimated_prompt_tokens": 1901,
+        "completed_quotes": 0,
+        "rejected_quotes": 1,
+        "prompt_eval_count": 1900,
+        "eval_count": 94,
+        "total_duration": 8008364300,
+        "num_ctx": 4096,
+        "num_predict": 512
+      },
+      "technical_error": null
+    },
+    {
+      "case": "time",
+      "query": "Thời gian đào tạo ngành Công nghệ thông tin là bao lâu?",
+      "expected_phrases": [
+        "4 năm"
+      ],
+      "passed": true,
+      "http_status": 200,
+      "status": "partial",
+      "request_id": "09998b1ca664479691d280578100a5fe",
+      "answer": "Thời gian đào tạo: 4 năm [E1]",
+      "citations": [
+        {
+          "pdf_page": 1,
+          "http_status": 200,
+          "quote_matches_page": true,
+          "url": "/sources/file_828ac9132de4e18ddd4019cc?bundle_id=b_d1303694380dd1af5cdec379&page=1#page=1"
+        }
+      ],
+      "timings": {
+        "retrieval_ms": 25.82,
+        "generation_ms": 6892.34,
+        "total_ms": 7268.03
+      },
+      "generation": {
+        "ready": true,
+        "model": "hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+        "digest": "3c4f22130d403283bb961721f2c4f83e4409afcbb7a7cd992f425c62b9304e35",
+        "runtime_version": "0.40.15",
+        "prompt_version": "utc-evidence-quotes-v3",
+        "attempts": 1,
+        "estimated_prompt_tokens": 1816,
+        "completed_quotes": 0,
+        "rejected_quotes": 0,
+        "prompt_eval_count": 1815,
+        "eval_count": 99,
+        "total_duration": 6859043000,
+        "num_ctx": 4096,
+        "num_predict": 512
+      },
+      "technical_error": null
+    },
+    {
+      "case": "synthesis",
+      "query": "Thời gian đào tạo ngành CNTT là bao lâu và chuẩn đầu ra yêu cầu kỹ năng làm việc nhóm ra sao?",
+      "expected_phrases": [
+        "4 năm",
+        "làm việc theo nhóm"
+      ],
+      "passed": true,
+      "http_status": 200,
+      "status": "partial",
+      "request_id": "6a14cf8466174aa7b46746143113f594",
+      "answer": "4. Có kỹ năng thuyết trình, kỹ năng giao tiếp, làm việc theo nhóm. [E5]\n\nThời gian đào tạo: 4 năm [E1]",
+      "citations": [
+        {
+          "pdf_page": 2,
+          "http_status": 200,
+          "quote_matches_page": true,
+          "url": "/sources/file_828ac9132de4e18ddd4019cc?bundle_id=b_d1303694380dd1af5cdec379&page=2#page=2"
+        },
+        {
+          "pdf_page": 1,
+          "http_status": 200,
+          "quote_matches_page": true,
+          "url": "/sources/file_828ac9132de4e18ddd4019cc?bundle_id=b_d1303694380dd1af5cdec379&page=1#page=1"
+        }
+      ],
+      "timings": {
+        "retrieval_ms": 38.03,
+        "generation_ms": 18402.52,
+        "total_ms": 18791.83
+      },
+      "generation": {
+        "ready": true,
+        "model": "hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+        "digest": "3c4f22130d403283bb961721f2c4f83e4409afcbb7a7cd992f425c62b9304e35",
+        "runtime_version": "0.40.15",
+        "prompt_version": "utc-evidence-quotes-v3",
+        "attempts": 1,
+        "estimated_prompt_tokens": 1876,
+        "completed_quotes": 0,
+        "rejected_quotes": 2,
+        "prompt_eval_count": 1875,
+        "eval_count": 297,
+        "total_duration": 18364704500,
+        "num_ctx": 4096,
+        "num_predict": 512
+      },
+      "technical_error": null
+    }
+  ],
+  "health": {
+    "alive": true,
+    "ready": true,
+    "bundle_count": 2,
+    "current": {
+      "fixed": "b_8684ab9bfc21961408ae78d0",
+      "recursive": "b_d1303694380dd1af5cdec379"
+    },
+    "llm": {
+      "ready": true,
+      "model": "hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+      "digest": "3c4f22130d403283bb961721f2c4f83e4409afcbb7a7cd992f425c62b9304e35",
+      "runtime_version": "0.40.15"
+    },
+    "worker": "separate_process"
+  },
+  "passed": true
+}

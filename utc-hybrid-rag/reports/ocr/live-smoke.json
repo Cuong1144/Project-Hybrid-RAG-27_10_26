@@ -1,0 +1,65 @@
+{
+  "dataset_id": "dataset_cbcbf5ef45388863affb36cb",
+  "ocr_pdf_page": 4,
+  "reviewed_excerpt": "3. Mã ngành: 7.48.02.01 (IE3)",
+  "results": [
+    {
+      "strategy": "recursive",
+      "request_id": "11424ec42fb4454c82f106312549d754",
+      "bundle_id": "b_de8ead48c1b788629ab0c990",
+      "citation_pdf_page": 4,
+      "source_sha256_matched": true,
+      "unreviewed_page_http_status": 404
+    },
+    {
+      "strategy": "fixed",
+      "request_id": "43dbb70cb12a4f9484ff5bc2ff3a6fdc",
+      "bundle_id": "b_b135f94bb4e8d0f3bd871d84",
+      "citation_pdf_page": 4,
+      "source_sha256_matched": true,
+      "unreviewed_page_http_status": 404
+    }
+  ],
+  "prior_bundles": {
+    "fixed": "b_8684ab9bfc21961408ae78d0",
+    "recursive": "b_d1303694380dd1af5cdec379"
+  },
+  "published_bundles": {
+    "recursive": "b_de8ead48c1b788629ab0c990",
+    "fixed": "b_b135f94bb4e8d0f3bd871d84"
+  },
+  "old_bundle_openable": true,
+  "ask": {
+    "http_status": 200,
+    "status": "partial",
+    "answer": "3. Mã ngành: 7.48.02.01 (IE3) [E1]",
+    "request_id": "894bbca5ff874a098c481a3ff799158c",
+    "citations": [
+      {
+        "anchor": "E1",
+        "chunk_id": "chunk_77d19b873bc02855812d7b1c7386300a",
+        "evidence_ids": [
+          "ev_81e1c150a4a05c73dc1ab44b_p4"
+        ],
+        "file_id": "file_81e1c150a4a05c73dc1ab44b",
+        "title": "Chuẩn đầu ra chương trình chất lượng cao Công nghệ thông tin Việt – Anh",
+        "pdf_page": 4,
+        "section": "3. Mã ngành: 7.48.02.01 (IE3)",
+        "quote": "3. Mã ngành: 7.48.02.01 (IE3)",
+        "url": "/sources/file_81e1c150a4a05c73dc1ab44b?bundle_id=b_de8ead48c1b788629ab0c990&page=4#page=4"
+      }
+    ],
+    "timings": {
+      "retrieval_ms": 28.78,
+      "generation_ms": 12296.61,
+      "total_ms": 13160.39
+    }
+  },
+  "worker": {
+    "job_id": "job_37f19ae7571c4424934a7e4b05764c71",
+    "ocr_pages": 10,
+    "unreviewed_pages_indexed": 0,
+    "status": "completed"
+  },
+  "passed": true
+}

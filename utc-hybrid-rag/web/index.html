@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a43">
+  <title>Cổng tra cứu thông tin đào tạo UTC</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Chuyển đến nội dung chính</a>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="UTC – trang tra cứu">
+      <span class="brand-mark" aria-hidden="true">U<span>TC</span></span>
+      <span class="brand-copy"><strong>UTC</strong><small>ĐẠI HỌC GIAO THÔNG VẬN TẢI</small></span>
+    </a>
+    <div class="sidebar-label">CỔNG THÔNG TIN ĐÀO TẠO</div>
+    <nav class="main-nav" aria-label="Điều hướng chính">
+      <button type="button" class="nav-item active" data-view="lookup" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Tra cứu</span><span class="nav-arrow">↗</span></button>
+      <button type="button" class="nav-item" data-view="documents"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 12h7M9 16h7"/></svg><span>Tài liệu nguồn</span></button>
+      <button type="button" class="nav-item" data-view="admin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 4v5c0 4-3.8 7.1-8 9-4.2-1.9-8-5-8-9V7zM9 12l2 2 4-4"/></svg><span>Quản trị dữ liệu</span></button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="local-label"><span class="local-dot"></span> HỆ THỐNG LOCAL</div>
+      <p>Tra cứu trong phạm vi tài liệu đã công bố. Luôn kiểm tra nguồn và chương trình áp dụng.</p>
+      <div class="sidebar-foot">Hybrid RAG <span>·</span> UTC</div>
+    </div>
+  </aside>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="breadcrumb">Cổng thông tin <span>/</span> <strong id="breadcrumb-current">Tra cứu</strong></div>
+      <div id="system-health" class="health-chip" role="status"><span class="status-dot"></span><span>Đang kết nối</span></div>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <section id="view-lookup" class="view">
+        <div class="page-intro">
+          <div><p class="eyebrow"><span></span> TRI THỨC TỪ TÀI LIỆU NHÀ TRƯỜNG</p><h1>Tra cứu thông tin<br>đào tạo <em>UTC</em></h1><p class="intro-text">Tìm văn bản, khám phá chương trình đào tạo và hỏi đáp tiếng Việt.<br class="desktop-break"> Mỗi câu trả lời đều đi cùng căn cứ để bạn kiểm chứng.</p></div>
+          <div class="intro-emblem" aria-hidden="true"><svg viewBox="0 0 160 160"><circle cx="80" cy="80" r="69"/><circle cx="80" cy="80" r="55"/><path d="M35 92V62l45-17 45 17v30M49 68v33M65 73v34M95 73v34M111 68v33M40 111h80M34 120h92M80 45v-9M75 36h10"/><path class="emblem-fill" d="m80 64 21 8-21 8-21-8z"/><path d="M69 76v12c7 5 15 5 22 0V76"/></svg><span>UNIVERSITY OF<br>TRANSPORT AND COMMUNICATIONS</span></div>
+        </div>
+
+        <div class="workspace-grid">
+          <section class="query-panel" aria-labelledby="query-title">
+            <div class="panel-heading"><div><span class="section-index">01</span><h2 id="query-title">Bạn đang tìm thông tin gì?</h2></div><span class="language-tag">Tiếng Việt</span></div>
+            <form id="query-form">
+              <fieldset class="mode-switch"><legend class="sr-only">Chế độ tra cứu</legend><label><input type="radio" name="mode" value="search" checked><span><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8" cy="8" r="5"/><path d="m12 12 5 5"/></svg>Tìm tài liệu</span></label><label><input type="radio" name="mode" value="ask"><span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 3h14v10H8l-5 4zM6 7h8M6 10h5"/></svg>Hỏi đáp có nguồn</span></label></fieldset>
+              <label for="query-input" class="sr-only">Câu hỏi hoặc từ khóa</label>
+              <textarea id="query-input" name="query" rows="4" maxlength="2000" required placeholder="Ví dụ: Chuẩn đầu ra ngành Công nghệ thông tin yêu cầu những kỹ năng nào?"></textarea>
+              <div class="query-controls"><span id="query-count" class="input-hint">0 / 2.000 ký tự</span><button class="button button-primary" id="submit-query" type="submit"><span>Tra cứu</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button></div>
+              <p id="llm-hint" class="llm-hint" hidden></p>
+            </form>
+            <div class="suggestions"><span>GỢI Ý TRA CỨU</span><div><button type="button" data-query="Chuẩn đầu ra ngành Công nghệ thông tin">Chuẩn đầu ra CNTT <span>↗</span></button><button type="button" data-query="Kỹ năng làm việc nhóm và giao tiếp">Kỹ năng làm việc nhóm <span>↗</span></button><button type="button" data-query="Yêu cầu về ngoại ngữ">Yêu cầu ngoại ngữ <span>↗</span></button></div></div>
+          </section>
+
+          <aside class="scope-panel" aria-labelledby="scope-title">
+            <div class="scope-heading"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4M8 3v6M16 9v6M12 15v6"/></svg><h2 id="scope-title">Phạm vi tra cứu</h2></div>
+            <label class="field-label" for="filter-major">Ngành đào tạo</label><select id="filter-major"><option value="">Tất cả ngành đã xác minh</option></select>
+            <div class="field-row"><div><label class="field-label" for="filter-degree">Bậc đào tạo</label><select id="filter-degree"><option value="">Tất cả</option></select></div><div><label class="field-label" for="filter-type">Loại chương trình</label><select id="filter-type"><option value="">Tất cả</option></select></div></div>
+            <label class="field-label" for="filter-program">Phiên bản chương trình</label><select id="filter-program"><option value="">Tất cả phiên bản đã xác minh</option></select>
+            <div class="scope-divider"></div>
+            <label class="field-label" for="strategy-select">Chiến lược phân đoạn</label><select id="strategy-select"><option value="recursive">Recursive · theo cấu trúc văn bản</option><option value="fixed">Fixed size · kích thước cố định</option></select>
+            <label class="field-label" for="version-select">Gói dữ liệu phục vụ</label><select id="version-select"><option value="">Phiên bản hiện hành</option></select>
+            <p class="scope-note"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M10 9v5M10 6v1"/></svg><span>Bộ lọc chỉ sử dụng metadata đã xác minh từ tài liệu.</span></p>
+          </aside>
+        </div>
+
+        <section id="results-region" class="results-region" aria-live="polite" aria-busy="false" hidden>
+          <div class="results-heading"><div><p class="eyebrow">KẾT QUẢ TRA CỨU</p><h2 id="results-title">Kết quả</h2></div><button type="button" id="cancel-query" class="button button-quiet" hidden>Dừng chờ</button></div>
+          <div id="results-content"></div>
+        </section>
+
+        <section class="collection-strip" aria-label="Thông tin kho dữ liệu">
+          <div><span class="strip-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6l2 2h8v14H4zM8 11h8M8 15h5"/></svg></span><div><strong id="stat-documents">—</strong><span>Tài liệu đang phục vụ</span></div></div>
+          <div><span class="strip-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 4-8 4-8-4zM4 12l8 4 8-4M4 17l8 4 8-4"/></svg></span><div><strong>BM25 + FAISS</strong><span>Truy xuất kết hợp bằng RRF</span></div></div>
+          <div><span class="strip-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 4v5c0 4-4 7-8 9-4-2-8-5-8-9V7zM9 12l2 2 4-4"/></svg></span><div><strong id="stat-llm">Đang kiểm tra</strong><span>Qwen3-4B · Ollama local</span></div></div>
+        </section>
+        <p class="coverage-notice" id="coverage-notice">Đang kiểm tra phạm vi dữ liệu đã công bố…</p>
+      </section>
+
+      <section id="view-documents" class="view" hidden>
+        <div class="compact-intro"><p class="eyebrow"><span></span> KHO TÀI LIỆU ĐÃ CÔNG BỐ</p><h1>Tài liệu nguồn</h1><p class="intro-text">Xem bản nguồn thuộc gói dữ liệu hiện đang chọn và kiểm tra phạm vi được phục vụ.</p></div>
+        <div class="document-toolbar"><label for="document-search" class="sr-only">Lọc tên tài liệu</label><input id="document-search" type="search" placeholder="Tìm theo tên tài liệu…"><span id="document-count" class="muted"></span><button type="button" class="button button-quiet" id="refresh-catalog">Làm mới</button></div>
+        <div id="documents-content" class="document-grid"></div>
+      </section>
+
+      <section id="view-admin" class="view" hidden>
+        <div class="compact-intro"><p class="eyebrow"><span></span> QUẢN LÝ PIPELINE VÀ PHÁT HÀNH</p><h1>Quản trị dữ liệu</h1><p class="intro-text">Nạp nguồn vào vùng chuẩn bị, kiểm tra bundle và công bố phiên bản phục vụ.</p></div>
+        <form id="admin-auth-form" class="admin-auth"><div><label class="field-label" for="admin-token">Khóa quản trị</label><input id="admin-token" type="password" autocomplete="off" placeholder="Nhập token được cấu hình trên server" required><small>Token chỉ được giữ trong bộ nhớ của trang này.</small></div><button class="button button-primary" type="submit">Kết nối quản trị</button><button class="button button-quiet" type="button" id="admin-disconnect" hidden>Ngắt kết nối</button></form>
+        <div id="admin-message" role="status"></div>
+        <div id="admin-content" hidden>
+          <div class="admin-actions-grid">
+            <section class="admin-card"><span class="section-index">01</span><h2>Nạp tài liệu</h2><p>Đường dẫn thư mục nguồn trên máy chạy server. Trang OCR cần được đối chiếu trước khi phát hành.</p><form id="ingest-form"><label class="field-label" for="source-path">Thư mục hoặc file nguồn</label><input id="source-path" required value="../Tailieu"><label class="field-label" for="metadata-path">File metadata JSON (nếu có)</label><input id="metadata-path" placeholder="Đường dẫn metadata đã xác minh"><label class="ingest-option"><input type="checkbox" id="ingest-ocr"> Nhận dạng trang quét bằng OCR</label><label class="ingest-option"><input type="checkbox" id="ingest-archives"> Đọc tài liệu trong tệp RAR</label><button class="button button-primary" type="submit">Tạo job nạp dữ liệu</button></form></section>
+            <section class="admin-card"><span class="section-index">02</span><h2>Xây dựng bundle</h2><p>Tạo BM25 và FAISS từ cùng một tập chunk, kèm manifest và kiểm tra toàn vẹn.</p><form id="build-form"><label class="field-label" for="dataset-id">Dataset ID</label><input id="dataset-id" required placeholder="ID từ job nạp dữ liệu"><label class="field-label" for="build-strategy">Chiến lược phân đoạn</label><select id="build-strategy"><option value="recursive">Recursive</option><option value="fixed">Fixed size</option></select><button class="button button-primary" type="submit">Xây dựng và kiểm tra</button></form></section>
+          </div>
+          <section class="admin-card release-card"><div class="card-title-row"><div><p class="eyebrow">QUẢN LÝ PHIÊN BẢN</p><h2>Bundle và lịch sử phát hành</h2></div><button type="button" id="refresh-admin" class="button button-quiet">Làm mới</button></div><p class="muted">Phát hành và quay lại đều kiểm tra phiên bản hiện hành để phát hiện xung đột.</p><div id="releases-list"></div></section>
+          <section class="admin-card"><h2>Tác vụ nạp dữ liệu</h2><div id="jobs-list"></div></section>
+          <details id="admin-operation-detail" class="operation-detail" hidden><summary>Chi tiết thao tác gần nhất</summary><pre id="admin-operation-output"></pre></details>
+        </div>
+      </section>
+      <footer class="page-footer"><span>UTC <span class="footer-divider">/</span> Cổng tra cứu thông tin đào tạo</span><span>Tài liệu là căn cứ. Phạm vi áp dụng cần được kiểm chứng.</span></footer>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,283 @@
+{
+  "review_note": "Reviewed source text on PDF pages 1-3. Folder year is not issue date, effective date or cohort. Only single-major CNTT source scoped; other PDF metadata remains unknown.",
+  "files": {
+    "Chuan_dau_ra/Nam_2018/1_ CNTT_UTC_2018.pdf": {
+      "title": "Chuẩn đầu ra ngành Công nghệ thông tin — bản nguồn 828ac913",
+      "fields": {
+        "major_code": {
+          "value": "7.48.02.01",
+          "verification_status": "verified",
+          "pages": [
+            1
+          ]
+        },
+        "major_name": {
+          "value": "Công nghệ thông tin",
+          "verification_status": "verified",
+          "pages": [
+            1
+          ]
+        },
+        "degree_level": {
+          "value": "Đại học chính quy",
+          "verification_status": "verified",
+          "pages": [
+            1
+          ]
+        },
+        "program_type": {
+          "value": "chính quy",
+          "verification_status": "verified",
+          "pages": [
+            1
+          ]
+        },
+        "program_version_id": {
+          "value": "utc-cntt-cdr-828ac9132de4",
+          "verification_status": "verified",
+          "pages": [
+            1
+          ]
+        },
+        "document_type": {
+          "value": "CHUẨN ĐẦU RA",
+          "verification_status": "verified",
+          "pages": [
+            1
+          ]
+        }
+      },
+      "reviewed_pages": [
+        1,
+        2,
+        3
+      ]
+    },
+    "Cac_chuyen_nganh_dao_tao_gtvt.docx": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/ed49b61ef0e4c8db9dac7cf4987a70d76f4ba5e821eb8360ba7c82f2c76b3fc9.pdf",
+        "source_sha256": "ed49b61ef0e4c8db9dac7cf4987a70d76f4ba5e821eb8360ba7c82f2c76b3fc9",
+        "sha256": "df16f1d6300887f7e6fe98cb411996448a44066814027f30f398e550b45352d0",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2018/13_ KINH TẾ XÂY DỰNG.doc": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/39c11917055b5e90aabe47752913b0b08fe65428a6fb02f0468a97e9cf5c01be.pdf",
+        "source_sha256": "39c11917055b5e90aabe47752913b0b08fe65428a6fb02f0468a97e9cf5c01be",
+        "sha256": "3573cd6051ef4df484bf7c05f2b76f4a1eaa16009f7b880329db4a389fa62b80",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2018/1_ TOÁN ỨNG DỤNG.docx": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/c675370f3382344c5fd8daddef231555d6fe6f1881ec0f7a8a7dc88b860edace.pdf",
+        "source_sha256": "c675370f3382344c5fd8daddef231555d6fe6f1881ec0f7a8a7dc88b860edace",
+        "sha256": "232d48029cb64b2d6fa536dd190593ef7c3c2daaebd039e9977e81459dda9f25",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/10_ KIẾN TRÚC.doc": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/128c0201bb1982d7c967177482e4b9822d196563e65c99ae7baa68d690155703.pdf",
+        "source_sha256": "128c0201bb1982d7c967177482e4b9822d196563e65c99ae7baa68d690155703",
+        "sha256": "c8c59267e5f5509e04009af368aa1cfe1bc87e68e73e47c98afbbea53041e6ef",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/11_ KỸ THUẬT XÂY DỰNG.doc": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/af797c85b0af9bf09b25acde17798b3b13b1e8ec44f90b05061a1c8fa5d95da4.pdf",
+        "source_sha256": "af797c85b0af9bf09b25acde17798b3b13b1e8ec44f90b05061a1c8fa5d95da4",
+        "sha256": "bb51428f808f93c224842f2a926ebe2b5d9d0eecb74ee94c378330217415b45b",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/12_ CÔNG NGHỆ KỸ THUẬT GIAO THÔNG.docx": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/86b883bb289f21fe257104b3d3d42e70faefb31d3468bd938fcde7c6b016d03b.pdf",
+        "source_sha256": "86b883bb289f21fe257104b3d3d42e70faefb31d3468bd938fcde7c6b016d03b",
+        "sha256": "2d1809060e5db6343a9513e6f95b1f11858c5bdb2dc5efe86c6c28b1f8fb27e8",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/15_ KẾ TOÁN.docx": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/57b07b2b015618c2501d7c08b4550ed2e3ca53cf9460b84d70f08ff17905177b.pdf",
+        "source_sha256": "57b07b2b015618c2501d7c08b4550ed2e3ca53cf9460b84d70f08ff17905177b",
+        "sha256": "7e11f7cdbe83da26947dd603ab6e958d8b3f06703854fc180fb05e997d96ac65",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/16_ KHAI THÁC VẬN TẢI.doc": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/d28a9742e6df488fa8d921be363603d4a0781b601fdae4984aa8ef1f63f0c7b0.pdf",
+        "source_sha256": "d28a9742e6df488fa8d921be363603d4a0781b601fdae4984aa8ef1f63f0c7b0",
+        "sha256": "312e399a5f2d310c24b8299a734add1fa86e9d2916bd2d119b6af71416df5a87",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/17_ KINH TẾ VẬN TẢI.doc": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/3b64cdf98013f0849a853663e5c81881f25e2451d934c012943e7578e54f3953.pdf",
+        "source_sha256": "3b64cdf98013f0849a853663e5c81881f25e2451d934c012943e7578e54f3953",
+        "sha256": "043b6950e2993131ac7e6450c45557a9b79724221fcb1303f90f4b6ed0b33136",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/19_ LOGISTICS VÀ QUẢN LÝ CHUỖI CUNG ỨNG.doc": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/ab10c04696ffd2fe47ce184614d41de22e7a0df3aec86c3a6c1010889f4a0c4e.pdf",
+        "source_sha256": "ab10c04696ffd2fe47ce184614d41de22e7a0df3aec86c3a6c1010889f4a0c4e",
+        "sha256": "5740b3ecdbfecf4a047cfe2ee7c2c962b974b5a430bb8046dc92b1d99df91d57",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/19_Kinh tế.docx": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/7a704a7977145c731dac39bd0c4d2c9d7c3729b93b3ec62b195740c3da20a81e.pdf",
+        "source_sha256": "7a704a7977145c731dac39bd0c4d2c9d7c3729b93b3ec62b195740c3da20a81e",
+        "sha256": "012ecb6001ec7232f3f51efcd5284d46a14f9ec6a9a230964c5e293c554fa661",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/20_ QUẢN TRỊ DVDL&LH.doc": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/92cfba4ae81aa3d0993525f6dec54b1c2d328b8e7a5244019fa4b7ec912b77e2.pdf",
+        "source_sha256": "92cfba4ae81aa3d0993525f6dec54b1c2d328b8e7a5244019fa4b7ec912b77e2",
+        "sha256": "920bd6d4165d7c93c9a8e10782baa393e3a589f76a55b510b6e98993b9b73b2d",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/21_ QUẢN TRỊ KINH DOANH.doc": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/02a2c9fe786fd46f689b714b6d44489b78b3c123ccb20d3bcc2dde5bf26bf412.pdf",
+        "source_sha256": "02a2c9fe786fd46f689b714b6d44489b78b3c123ccb20d3bcc2dde5bf26bf412",
+        "sha256": "70257ddb161bdbc36faf9672fa1b79d7b29b34feade5344412563d58a0981448",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/22_ TÀI CHÍNH NGÂN HÀNG.doc": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/7ef6ade4a296a07a585d278514155324d8358c4c06f76e34510243b26073addd.pdf",
+        "source_sha256": "7ef6ade4a296a07a585d278514155324d8358c4c06f76e34510243b26073addd",
+        "sha256": "75d058071c564b7c00f0de4807580a331bd4850f4f9647e0d6f4481bf805677e",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/23_ KỸ THUẬT CƠ ĐIỆN TỬ.doc": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/eac0351a85546212b5cc993717413929f9bb8bf4128db6b1beb6df86e1102a56.pdf",
+        "source_sha256": "eac0351a85546212b5cc993717413929f9bb8bf4128db6b1beb6df86e1102a56",
+        "sha256": "8ea5f6fe2a26ffdbd354e361e9e5a3b52f2dd6da34248999714fe6632fc40cb9",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/24_ KỸ THUẬT CƠ KHÍ ĐỘNG LỰC.docx": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/1a7ca75a143f76863f32cdd0cb12e5f79576ee53a9380e98c3efa21dabd2e18e.pdf",
+        "source_sha256": "1a7ca75a143f76863f32cdd0cb12e5f79576ee53a9380e98c3efa21dabd2e18e",
+        "sha256": "b713435d3e8705088087fb648ca88d4c674c0331fc4d3cc6453bea40c3222eb6",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/26_ KỸ THUẬT NHIỆT.docx": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/a14006a42595a87993aecc5fc1ba15fc50ae41d66615c87f3dc3276d53d38f6e.pdf",
+        "source_sha256": "a14006a42595a87993aecc5fc1ba15fc50ae41d66615c87f3dc3276d53d38f6e",
+        "sha256": "60767fc0f951b357f474e2fd63dea6a3371bc336af54139238cf902d1760875e",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/2_ CÔNG NGHỆ THÔNG TIN.docx": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/b570869d7b8d25dceb774abee569726af614de97a6da617abb82194b52f5b59a.pdf",
+        "source_sha256": "b570869d7b8d25dceb774abee569726af614de97a6da617abb82194b52f5b59a",
+        "sha256": "6431c70fff1cdc7aad4b50930b37aaea99ff33e5fa1f5e7184a849632e1a2475",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/3_ KỸ THUẬT XÂY DỰNG CTGT.docx": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/160b621b4c0750bb6c351c230d6d1ea21adc2a647c23d8026868a85c5c24e2b8.pdf",
+        "source_sha256": "160b621b4c0750bb6c351c230d6d1ea21adc2a647c23d8026868a85c5c24e2b8",
+        "sha256": "60aab4cce05105b08f44419fcd61956799509e38428efe80667898192eb20403",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/4_ CÔNG TRÌNH THUỶ.docx": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/a8edf7a0a37dc590d06fdf319877e333e3718ffbecf9da6aa0bab7b8b7f26cfc.pdf",
+        "source_sha256": "a8edf7a0a37dc590d06fdf319877e333e3718ffbecf9da6aa0bab7b8b7f26cfc",
+        "sha256": "e2ecb8098828c58a3bd52f538480ef7477be7952083e1714b09781cb89800816",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/5_ KỸ THUẬT ĐIỆN TỬ VIỄN THÔNG.docx": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/96bb472b3dfb3079327ab6f8df51c6b9decf6456b5418e87e35015203a4b69eb.pdf",
+        "source_sha256": "96bb472b3dfb3079327ab6f8df51c6b9decf6456b5418e87e35015203a4b69eb",
+        "sha256": "140b535c24db206fbbd5fff3802e66b79483d94176cc43495e7bfc5e001bc918",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/6_ KỸ THUẬT ĐIỀU KHIỂN VÀ TĐH.doc": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/3e34b1a66dfbc4d79ef9a6faa043dbeb52290b7e757aff8be4e051c4147e0538.pdf",
+        "source_sha256": "3e34b1a66dfbc4d79ef9a6faa043dbeb52290b7e757aff8be4e051c4147e0538",
+        "sha256": "d195f59ef43a65590ff32e90385053088b6c9c1a0a3fbf5f67a31258de928bcc",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/7_ KỸ THUẬT ROBOT VÀ TRÍ TỤE NHÂN TẠO.doc": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/5b14e8843aaaa604601f16029ba8ad9e6ecb2003205a47d4af0b65f58c88b097.pdf",
+        "source_sha256": "5b14e8843aaaa604601f16029ba8ad9e6ecb2003205a47d4af0b65f58c88b097",
+        "sha256": "4fe7b15018ae10ef946722d026a764de18ec3e859540e7a036ac2a75140d605a",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/8_ KỸ THUẬT ĐIỆN.doc": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/993190fe2a0c7bf8c5c465ce965f090836ef200fa01da789f0a42125cb6afb28.pdf",
+        "source_sha256": "993190fe2a0c7bf8c5c465ce965f090836ef200fa01da789f0a42125cb6afb28",
+        "sha256": "a169a432253170cad62f736aefe81c518fd930ac9b12c88f3edc725ec4bf5ef6",
+        "reviewed_pages": []
+      }
+    },
+    "Chuan_dau_ra/Nam_2021/9_ HỆ THỐNG GIAO THÔNG THÔNG MINH.doc": {
+      "reference_pdf": {
+        "path": "staging/word-pdfs/f4cdfc0f8b0010199d64b291f80923066b060bfbbf16eb50b537179af3dba13d.pdf",
+        "source_sha256": "f4cdfc0f8b0010199d64b291f80923066b060bfbbf16eb50b537179af3dba13d",
+        "sha256": "b905c8ae37e57d07df0c67ae5b2d8541932c2571e326aa81c55fdac1dc20519b",
+        "reviewed_pages": []
+      }
+    },
+    "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf": {
+      "title": "Chuẩn đầu ra chương trình chất lượng cao Công nghệ thông tin Việt – Anh",
+      "review_note": "Đã đối chiếu mục 3 ở trang PDF 4 với ảnh gốc. Chỉ duyệt dòng mã ngành, các bảng và phần còn lại cần rà soát.",
+      "fields": {
+        "major_code": {
+          "value": "7.48.02.01",
+          "verification_status": "verified",
+          "pages": [
+            4
+          ]
+        },
+        "program_version_id": {
+          "value": "utc-cntt-clc-viet-anh-cdr-81e1c150a4a0",
+          "verification_status": "verified",
+          "pages": [
+            4
+          ]
+        }
+      },
+      "ocr_reviews": {
+        "4": {
+          "candidate_sha256": "e0d323b1a08aae05bd7ef7a3a94a1e2fb7b72610ed42a8565f35c42d02442057",
+          "excerpt": "3. Mã ngành: 7.48.02.01 (IE3)"
+        }
+      }
+    }
+  }
+}

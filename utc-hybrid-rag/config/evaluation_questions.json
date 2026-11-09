@@ -1,0 +1,341 @@
+{
+  "evaluation_schema_version": 1,
+  "dataset_version": "dataset_6cbe41d3f96365773f95279a",
+  "split": "development",
+  "ground_truth_review_status": "source_text_reviewed_by_developer",
+  "source": {
+    "relative_path": "Chuan_dau_ra/Nam_2018/1_ CNTT_UTC_2018.pdf",
+    "file_id": "file_828ac9132de4e18ddd4019cc",
+    "pdf_pages": [
+      1,
+      2,
+      3
+    ],
+    "scope": "Chuẩn đầu ra ngành Công nghệ thông tin, bản nguồn được nhận diện bằng SHA-256; không xác nhận năm ban hành, hiệu lực hoặc khóa áp dụng từ tên thư mục."
+  },
+  "limitations": [
+    "Bộ phát triển hẹp trên một PDF 3 trang, chưa phải tập kiểm thử độc lập hoặc nghiệm thu bên ngoài.",
+    "Đánh giá này chỉ tính retrieval; expected_status của câu chẩn đoán cần được kiểm riêng trên API /ask.",
+    "Không đánh giá diễn giải LLM, tính đầy đủ của chương trình, tổng tín chỉ hoặc hiệu lực hiện hành.",
+    "Mỗi gold unit là trọn một đoạn nguồn dưới 150 ký tự; synthesis yêu cầu hai đơn vị khác nhau trên hai trang."
+  ],
+  "questions": [
+    {
+      "id": "KW01",
+      "category": "keyword",
+      "query": "Mã ngành Công nghệ thông tin trong tài liệu là gì?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "evidence": [
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 1,
+          "char_start": 110,
+          "char_end": 133,
+          "quote": "2. Mã ngành: 7.48.02.01"
+        }
+      ]
+    },
+    {
+      "id": "KW02",
+      "category": "keyword",
+      "query": "Thời gian đào tạo ngành Công nghệ thông tin là bao lâu?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "evidence": [
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 1,
+          "char_start": 193,
+          "char_end": 217,
+          "quote": "Thời gian đào tạo: 4 năm"
+        }
+      ]
+    },
+    {
+      "id": "KW03",
+      "category": "keyword",
+      "query": "Chuẩn kỹ năng thuyết trình, giao tiếp và làm việc theo nhóm quy định gì?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "evidence": [
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 2,
+          "char_start": 587,
+          "char_end": 653,
+          "quote": "4. Có kỹ năng thuyết trình, kỹ năng giao tiếp, làm việc theo nhóm."
+        }
+      ]
+    },
+    {
+      "id": "KW04",
+      "category": "keyword",
+      "query": "Tài liệu nêu khả năng học tiếp trình độ thạc sĩ, tiến sĩ trong nước như thế nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "evidence": [
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 3,
+          "char_start": 344,
+          "char_end": 434,
+          "quote": "- Có khả năng học tập tiếp tục ở trình độ thạc sĩ, tiến sĩ sau khi ra trường ở trong nước."
+        }
+      ]
+    },
+    {
+      "id": "KW05",
+      "category": "keyword",
+      "query": "CDIO và ACM được nêu trong các chuẩn tham khảo nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "evidence": [
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 3,
+          "char_start": 613,
+          "char_end": 641,
+          "quote": "- Chuẩn CDIO (www.cdio.org);"
+        },
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 3,
+          "char_start": 644,
+          "char_end": 748,
+          "quote": "- Chuẩn chương trình đào tạo công nghệ thông tin của hiệp hội máy tính Hoa Kỳ ACM\n(http://www.acm.org/);"
+        }
+      ]
+    },
+    {
+      "id": "SE01",
+      "category": "semantic",
+      "query": "Người học phải nắm những gì về viết mã và xây dựng thuật toán?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "evidence": [
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 1,
+          "char_start": 946,
+          "char_end": 1041,
+          "quote": "3. Nắm vững các kỹ thuật, ngôn ngữ, công cụ lập trình, biết cách phân tích thiết kế\nthuật toán."
+        }
+      ]
+    },
+    {
+      "id": "SE02",
+      "category": "semantic",
+      "query": "Khi đi làm, sinh viên cần có thái độ nghề nghiệp và trách nhiệm ra sao?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "evidence": [
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 2,
+          "char_start": 1065,
+          "char_end": 1166,
+          "quote": "2. Có phẩm chất đạo đức tốt, lòng yêu nghề, có ý thức tổ chức kỷ luật và trách nhiệm\ntrong công việc."
+        }
+      ]
+    },
+    {
+      "id": "SE03",
+      "category": "semantic",
+      "query": "Sau khi ra trường có thể học thêm một bằng đại học ở lĩnh vực khác không?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "evidence": [
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 3,
+          "char_start": 237,
+          "char_end": 341,
+          "quote": "- Có thể tiếp tục học bằng đại học thứ 2 của các ngành kinh tế, kỹ thuật trong trường\nhoặc ngoài trường."
+        }
+      ]
+    },
+    {
+      "id": "SE04",
+      "category": "semantic",
+      "query": "Chuẩn đầu ra mô tả khả năng theo học chương trình sau đại học ở nước ngoài như thế nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "evidence": [
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 3,
+          "char_start": 437,
+          "char_end": 540,
+          "quote": "- Đủ kiến thức tương đương để có thể được chấp nhận theo học các chương trình sau\nđại học ở nước ngoài."
+        }
+      ]
+    },
+    {
+      "id": "SE05",
+      "category": "semantic",
+      "query": "Những kiến thức nền tảng nào được dùng cho học tập và nghiên cứu CNTT?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "evidence": [
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 1,
+          "char_start": 816,
+          "char_end": 943,
+          "quote": "2. Có khả năng vận dụng các kiến thức toán học và khoa học cơ bản vào học tập và\nnghiên cứu trong lĩnh vực công nghệ thông tin."
+        }
+      ]
+    },
+    {
+      "id": "SY01",
+      "category": "synthesis",
+      "query": "Tài liệu ghi mã ngành nào và yêu cầu kỹ năng thuyết trình, giao tiếp, làm việc nhóm ra sao?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "evidence": [
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 1,
+          "char_start": 110,
+          "char_end": 133,
+          "quote": "2. Mã ngành: 7.48.02.01"
+        },
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 2,
+          "char_start": 587,
+          "char_end": 653,
+          "quote": "4. Có kỹ năng thuyết trình, kỹ năng giao tiếp, làm việc theo nhóm."
+        }
+      ]
+    },
+    {
+      "id": "SY02",
+      "category": "synthesis",
+      "query": "Kiến thức lập trình, thuật toán cần nắm liên hệ với vị trí kỹ sư phần mềm sau tốt nghiệp như thế nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "evidence": [
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 1,
+          "char_start": 946,
+          "char_end": 1041,
+          "quote": "3. Nắm vững các kỹ thuật, ngôn ngữ, công cụ lập trình, biết cách phân tích thiết kế\nthuật toán."
+        },
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 2,
+          "char_start": 1367,
+          "char_end": 1469,
+          "quote": "- Kỹ sư lập trình, phân tích thiết kế, kiểm thử, xây dựng, tích hợp hệ thống tại các công\nty phần mềm."
+        }
+      ]
+    },
+    {
+      "id": "SY03",
+      "category": "synthesis",
+      "query": "Chuẩn kiến thức mạng máy tính và vị trí tư vấn, quản trị hệ thống sau tốt nghiệp gồm những nội dung nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "evidence": [
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 1,
+          "char_start": 1181,
+          "char_end": 1303,
+          "quote": "5. Nắm vững các kiến thức về mạng máy tính, an toàn thông tin và an ninh mạng, vận\nhành và bảo trì các hệ thống thông tin."
+        },
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 2,
+          "char_start": 1472,
+          "char_end": 1601,
+          "quote": "- Kỹ sư tư vấn xây dựng các hệ thống thông tin, quản trị các hệ thống thông tin hoặc\nquản trị mạng tại các cơ quan, doanh nghiệp."
+        }
+      ]
+    },
+    {
+      "id": "SY04",
+      "category": "synthesis",
+      "query": "Tài liệu yêu cầu tinh thần học hỏi ra sao và nêu khả năng học tiếp thạc sĩ, tiến sĩ trong nước như thế nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "evidence": [
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 2,
+          "char_start": 1169,
+          "char_end": 1216,
+          "quote": "3. Có tinh thần ham học hỏi, nâng cao trình độ."
+        },
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 3,
+          "char_start": 344,
+          "char_end": 434,
+          "quote": "- Có khả năng học tập tiếp tục ở trình độ thạc sĩ, tiến sĩ sau khi ra trường ở trong nước."
+        }
+      ]
+    },
+    {
+      "id": "SY05",
+      "category": "synthesis",
+      "query": "Thời gian đào tạo là bao lâu và sau tốt nghiệp có thể học bằng đại học thứ hai ở những nhóm ngành nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "evidence": [
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 1,
+          "char_start": 193,
+          "char_end": 217,
+          "quote": "Thời gian đào tạo: 4 năm"
+        },
+        {
+          "file_id": "file_828ac9132de4e18ddd4019cc",
+          "pdf_page": 3,
+          "char_start": 237,
+          "char_end": 341,
+          "quote": "- Có thể tiếp tục học bằng đại học thứ 2 của các ngành kinh tế, kỹ thuật trong trường\nhoặc ngoài trường."
+        }
+      ]
+    },
+    {
+      "id": "DG01",
+      "category": "diagnostic",
+      "query": "Học phí ngành CNTT kỳ học năm 2026 là bao nhiêu?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "evidence": [],
+      "expected_status": "insufficient_evidence",
+      "diagnostic_reason": "Tài liệu chuẩn đầu ra không công bố học phí kỳ năm 2026."
+    },
+    {
+      "id": "DG02",
+      "category": "diagnostic",
+      "query": "Chuẩn đầu ra yêu cầu những kỹ năng nào?",
+      "filters": {},
+      "evidence": [],
+      "expected_status": "clarification_required",
+      "diagnostic_reason": "Chưa chọn program_version_id đã xác minh; không tự áp phạm vi ngành."
+    }
+  ]
+}

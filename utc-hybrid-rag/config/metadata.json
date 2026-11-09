@@ -1,0 +1,57 @@
+{
+  "review_note": "Reviewed source text on PDF pages 1-3. Folder year is not issue date, effective date or cohort. Only single-major CNTT source scoped; other PDF metadata remains unknown.",
+  "files": {
+    "Chuan_dau_ra/Nam_2018/1_ CNTT_UTC_2018.pdf": {
+      "title": "Chuẩn đầu ra ngành Công nghệ thông tin — bản nguồn 828ac913",
+      "fields": {
+        "major_code": {
+          "value": "7.48.02.01",
+          "verification_status": "verified",
+          "pages": [
+            1
+          ]
+        },
+        "major_name": {
+          "value": "Công nghệ thông tin",
+          "verification_status": "verified",
+          "pages": [
+            1
+          ]
+        },
+        "degree_level": {
+          "value": "Đại học chính quy",
+          "verification_status": "verified",
+          "pages": [
+            1
+          ]
+        },
+        "program_type": {
+          "value": "chính quy",
+          "verification_status": "verified",
+          "pages": [
+            1
+          ]
+        },
+        "program_version_id": {
+          "value": "utc-cntt-cdr-828ac9132de4",
+          "verification_status": "verified",
+          "pages": [
+            1
+          ]
+        },
+        "document_type": {
+          "value": "CHUẨN ĐẦU RA",
+          "verification_status": "verified",
+          "pages": [
+            1
+          ]
+        }
+      },
+      "reviewed_pages": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+}

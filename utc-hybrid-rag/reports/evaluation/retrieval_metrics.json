@@ -1,0 +1,2407 @@
+{
+  "evaluation_schema_version": 1,
+  "created_at": "2026-11-08T17:22:57.875824+00:00",
+  "evaluation_kind": "retrieval_only",
+  "dataset_version": "dataset_6cbe41d3f96365773f95279a",
+  "question_set": "D:\\ML\\RAG\\CDCNTT\\27_10_26\\utc-hybrid-rag\\config\\evaluation_questions.json",
+  "question_set_split": "development",
+  "ground_truth_review_status": "source_text_reviewed_by_developer",
+  "category_counts": {
+    "keyword": 5,
+    "semantic": 5,
+    "synthesis": 5,
+    "diagnostic": 2
+  },
+  "minimum_category_counts_met": true,
+  "bundles": {
+    "fixed": {
+      "schema_version": 1,
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "index_version": "b_8684ab9bfc21961408ae78d0",
+      "dataset_version": "dataset_6cbe41d3f96365773f95279a",
+      "chunk_set_id": "cs_8684ab9bfc21961408ae78d0",
+      "strategy": "fixed",
+      "created_at": "2026-11-08T17:18:44.285729+00:00",
+      "state": "qa_passed",
+      "config": {
+        "strategy": "fixed",
+        "chunk_size": 700,
+        "overlap": 100,
+        "unit": "unicode_characters",
+        "pipeline_revision": "utc-rag-0.1.0",
+        "bm25": {
+          "k1": 1.5,
+          "b": 0.75,
+          "idf": "log(1+(N-df+0.5)/(df+0.5))",
+          "tokenizer": "nfc_unicode_codes_v1"
+        },
+        "retrieval": {
+          "bm25_k": 8,
+          "faiss_k": 8,
+          "rrf_k": 60,
+          "context_k": 5
+        }
+      },
+      "embedding": {
+        "model": "intfloat/multilingual-e5-small",
+        "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+        "tokenizer_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+        "pooling": "mean",
+        "query_instruction": "query: ",
+        "document_instruction": "passage: ",
+        "dimension": 384,
+        "metric": "inner_product",
+        "normalize": true,
+        "device": "cpu",
+        "max_tokens": 512
+      },
+      "coverage": {
+        "total_files": 75,
+        "eligible_files": 32,
+        "blocked_files": 41,
+        "duplicate_files": 2,
+        "issues": [
+          {
+            "relative_path": "Cac_chuyen_nganh_dao_tao_gtvt.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_ed49b61ef0e4c8db9dac7cf4"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2018/13_ KINH TẾ XÂY DỰNG.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_39c11917055b5e90aabe4775"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2018/1_ TOÁN ỨNG DỤNG.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_c675370f3382344c5fd8dadd"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/10_ KIẾN TRÚC.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_128c0201bb1982d7c9671774"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/11_ KỸ THUẬT XÂY DỰNG.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_af797c85b0af9bf09b25acde"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/12_ CÔNG NGHỆ KỸ THUẬT GIAO THÔNG.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_86b883bb289f21fe257104b3"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/15_ KẾ TOÁN.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_57b07b2b015618c2501d7c08"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/16_ KHAI THÁC VẬN TẢI.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_d28a9742e6df488fa8d921be"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/17_ KINH TẾ VẬN TẢI.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_3b64cdf98013f0849a853663"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/19_ LOGISTICS VÀ QUẢN LÝ CHUỖI CUNG ỨNG.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_ab10c04696ffd2fe47ce1846"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/19_Kinh tế.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_7a704a7977145c731dac39bd"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/20_ QUẢN TRỊ DVDL&LH.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_92cfba4ae81aa3d0993525f6"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/21_ QUẢN TRỊ KINH DOANH.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_02a2c9fe786fd46f689b714b"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/22_ TÀI CHÍNH NGÂN HÀNG.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_7ef6ade4a296a07a585d2785"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/23_ KỸ THUẬT CƠ ĐIỆN TỬ.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_eac0351a85546212b5cc9937"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/24_ KỸ THUẬT CƠ KHÍ ĐỘNG LỰC.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_1a7ca75a143f76863f32cdd0"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/26_ KỸ THUẬT NHIỆT.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a14006a42595a87993aecc5f"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/2_ CÔNG NGHỆ THÔNG TIN.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_b570869d7b8d25dceb774abe"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/3_ KỸ THUẬT XÂY DỰNG CTGT.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_160b621b4c0750bb6c351c23"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/4_ CÔNG TRÌNH THUỶ.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a8edf7a0a37dc590d06fdf31"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/5_ KỸ THUẬT ĐIỆN TỬ VIỄN THÔNG.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_96bb472b3dfb3079327ab6f8"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/6_ KỸ THUẬT ĐIỀU KHIỂN VÀ TĐH.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_3e34b1a66dfbc4d79ef9a6fa"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/7_ KỸ THUẬT ROBOT VÀ TRÍ TỤE NHÂN TẠO.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_5b14e8843aaaa604601f1602"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/8_ KỸ THUẬT ĐIỆN.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_993190fe2a0c7bf8c5c465ce"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/9_ HỆ THỐNG GIAO THÔNG THÔNG MINH.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_f4cdfc0f8b0010199d64b291"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2018/Khoa Môi trường & ATGT/Khoa MTATGT.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_79e75b404d58c6f8bc0862b8"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2018/Khoa Quản lý xây dựng/Khoa QLXD.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_5ced9028636ff92bf75f4ab6"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2018/Khoa Vận tải - Kinh tế/Khoa VTKT.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_5391408bd51fd546038cdbd2"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2018/Khoa Điện - Điện tử/Khoa dien tu.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_23861277ff6aa9a07054452c"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Công nghệ thông tin/CNTT.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_8692e5034a8e2a3d1b4f6bd3"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Công trình/Công trình(2).rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_653469c14271694b77c1e66a"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Cơ khí/Khoa Cơ khí.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_fa5180890d8d2fd8f683d442"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Kỹ thuật xây dựng/Khoa KTXD.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_58f65d2925f728a10bcbed7e"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Môi trường & ATGT/Khoa MT.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_49c68d2653c92ddcc65bbdea"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Quản lý xây dựng/QLXD.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_fe3dd64560e0324e2dcbe7c3"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Vận tải - Kinh tế/CTĐT các ngành thuộc khoa VTKT.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_820d6acf1d692407ce077753"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Điện - Điện tử/Khoa Đ_ĐT.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_b19307c3038de7cd1745a6a2"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Đào tạo Quốc tế/chuong-trinh-tien-tien-KTXD/chuong-trinh-tien-tien.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_724308caf1b559f9cdce6ae7",
+            "pdf_page": 1
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Đào tạo Quốc tế/chuong-trinh-tien-tien-KTXD/chuong-trinh-tien-tien.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_724308caf1b559f9cdce6ae7",
+            "pdf_page": 2
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Đào tạo Quốc tế/chuong-trinh-tien-tien-KTXD/chuong-trinh-tien-tien.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_724308caf1b559f9cdce6ae7",
+            "pdf_page": 3
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Đào tạo Quốc tế/chuong-trinh-tien-tien-KTXD/chuong-trinh-tien-tien.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_724308caf1b559f9cdce6ae7",
+            "pdf_page": 4
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Đào tạo Quốc tế/chuong-trinh-tien-tien-KTXD/chuong-trinh-tien-tien.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_724308caf1b559f9cdce6ae7",
+            "pdf_page": 5
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Đào tạo Quốc tế/QD KHUNG CHUONG TRINH CLC.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_7613214123b75a24be35854f"
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 1
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 2
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 3
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 4
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 5
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 6
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 7
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 8
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 9
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 10
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 1
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 2
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 3
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 4
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 5
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 6
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 7
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 8
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 9
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 10
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 11
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 12
+          }
+        ],
+        "total_pages": 386,
+        "eligible_pages": 359,
+        "blocked_pages": 27,
+        "unique_files": 73,
+        "incomplete_files": 0
+      },
+      "chunk_count": 996,
+      "document_count": 32,
+      "checksums": {
+        "bm25.json": "9a56a204d1755137c027edfa99cb2a781da23fdbd5b21f870f049a54d296fc04",
+        "chunks.json": "2bc6a984bf37d24046bcda1229a096c69daa1a7681469eebc091e57ff9baa82b",
+        "dataset.json": "1e673a64fa1658e27850cdaa5a4c6411457c4d4b5ca37f5938963798d11a0ebc",
+        "index.faiss": "56065416b884b9bcdea2afe186a1f25209a1ba08a05ea3a3fc61f1ae08aab041",
+        "vectors.npy": "fcf5e8e79813ccebd023fa7bc6a41761861c167a62777850c688687c36c82eee",
+        "vector_ids.json": "f24d074150b234bccfe899ac1dc5aa25e3b8a08ce3b8952441f0c14b4920c261"
+      },
+      "source_checksums": {
+        "snapshots/90f39c210fbffd560ea18a2e7786a0b3cab1238d87705d0f4ee28330798bdbac/chuan-dau-ra-trinh-do-cu-nhan.pdf": "90f39c210fbffd560ea18a2e7786a0b3cab1238d87705d0f4ee28330798bdbac",
+        "snapshots/828ac9132de4e18ddd4019cc97f2813b8c1c87fffd887e71eb6245481704a82d/1_ CNTT_UTC_2018.pdf": "828ac9132de4e18ddd4019cc97f2813b8c1c87fffd887e71eb6245481704a82d",
+        "snapshots/834ec704068ddd79523ceadf4aac12884f491d89482601fe0a5144e69bb34cce/1_ Công nghệ KTGT - KTATGT_2018.pdf": "834ec704068ddd79523ceadf4aac12884f491d89482601fe0a5144e69bb34cce",
+        "snapshots/fed8046a41e8bbd31456b1129b91935b3d6c3c72aea26afc56340ca03cf344d9/1_ Cơ khí Động lực.pdf": "fed8046a41e8bbd31456b1129b91935b3d6c3c72aea26afc56340ca03cf344d9",
+        "snapshots/7952c025561c4dd91973e64fbfd1effd91a312d0e28bcc18eb9d3f8f87afc4db/1_ Ke toan.pdf": "7952c025561c4dd91973e64fbfd1effd91a312d0e28bcc18eb9d3f8f87afc4db",
+        "snapshots/5b74370ff07b6201d060b8ed15599a6b40c4786eb00f8927d314a8350db44c12/1_ Kỹ thuật ĐTVT.pdf": "5b74370ff07b6201d060b8ed15599a6b40c4786eb00f8927d314a8350db44c12",
+        "snapshots/34a0a39e0e6cc095f43efce9ff83c1e48b0a67d67fe67c89542929b84255aae2/1_ QLXD.pdf": "34a0a39e0e6cc095f43efce9ff83c1e48b0a67d67fe67c89542929b84255aae2",
+        "snapshots/596343347763a82f54b431df29ff384b4fce7fb004e14c5dee3c652cbcd97d27/1_ XDCTT_2018.pdf": "596343347763a82f54b431df29ff384b4fce7fb004e14c5dee3c652cbcd97d27",
+        "snapshots/6d51c53beb88a4e2b26854686931dc9ff664a47e7d62a55e5ef60df2932c4805/1_KỸ THUẬT XÂY DỰNG CTGT.pdf": "6d51c53beb88a4e2b26854686931dc9ff664a47e7d62a55e5ef60df2932c4805",
+        "snapshots/ed1137c280f1c567735f807774edf2d4166d17262b7c8516b119e1e6e9920618/2_ DK&TDHGT.pdf": "ed1137c280f1c567735f807774edf2d4166d17262b7c8516b119e1e6e9920618",
+        "snapshots/1349c3469be18f3e41b670589d8296dc21e2a6cc4c1abee4f4d32c55038004d9/2_ Khai thác vận tải.pdf": "1349c3469be18f3e41b670589d8296dc21e2a6cc4c1abee4f4d32c55038004d9",
+        "snapshots/9ea83a366b5a78c1ec413ee350183482a0f20d9cd58fabd87263f0f083621cd7/2_ KTMTGT.pdf": "9ea83a366b5a78c1ec413ee350183482a0f20d9cd58fabd87263f0f083621cd7",
+        "snapshots/518f007076b30bdba5f929e4d31b7445ff6202b33aa56ad53c78830b73b3eadd/2_ Kỹ thuật co khi.pdf": "518f007076b30bdba5f929e4d31b7445ff6202b33aa56ad53c78830b73b3eadd",
+        "snapshots/e8781028bf408662580ef5d19953fb3f6b6ab1ae93af0806115a045f8da0b540/3_ Kinh tế Vận tải.pdf": "e8781028bf408662580ef5d19953fb3f6b6ab1ae93af0806115a045f8da0b540",
+        "snapshots/8569bdbdf36a06ec9b35957f008ccbd4e7777c92e413fc9e80aa09cd735e601f/3_ Kỹ thuật nhiệt.pdf": "8569bdbdf36a06ec9b35957f008ccbd4e7777c92e413fc9e80aa09cd735e601f",
+        "snapshots/23b3629d3733ddbb33d9b194da0e62592c895e3edffe98f1bceda4fff196b0a5/3_ Kỹ thuật điện.pdf": "23b3629d3733ddbb33d9b194da0e62592c895e3edffe98f1bceda4fff196b0a5",
+        "snapshots/983b3a13b900c3bcb6cfe3fe78cf96aba700caaf16a156cb0325a985f0387d36/4_ Kinh tế.pdf": "983b3a13b900c3bcb6cfe3fe78cf96aba700caaf16a156cb0325a985f0387d36",
+        "snapshots/01da6799ce7e225354fe26463110ca798f9630e7d20771b76243cad6a567af1f/4_ Kỹ thuật Ô tô.pdf": "01da6799ce7e225354fe26463110ca798f9630e7d20771b76243cad6a567af1f",
+        "snapshots/97e8a141ed1b9ca048ab3763fa01434d024f8d6e31057177b419304025328bdc/5_ Quản trị kinh doanh.pdf": "97e8a141ed1b9ca048ab3763fa01434d024f8d6e31057177b419304025328bdc",
+        "snapshots/09d10c8f2943a508ffe8b6ba1cc4804cd881cfb551aee8818079b51dd48aa351/Kỹ thuật xây dựng.pdf": "09d10c8f2943a508ffe8b6ba1cc4804cd881cfb551aee8818079b51dd48aa351",
+        "snapshots/9f74bea152efb5e762a47178dc665662a8566452aad293b24d9baa839ddf40a7/14_ QUẢN LÝ XÂY DỰNG.pdf": "9f74bea152efb5e762a47178dc665662a8566452aad293b24d9baa839ddf40a7",
+        "snapshots/f8b42fec3f3940b42e1769285664ebb8bd1915bb91c83f3b824038a00eb5c9e3/25_ KỸ THUẬT CƠ KHÍ.pdf": "f8b42fec3f3940b42e1769285664ebb8bd1915bb91c83f3b824038a00eb5c9e3",
+        "snapshots/902fc74dee0d973acd277196d314372f40c88eb94b693f70a1a8f9f5de0ed871/27_ KỸ THUẬT Ô TÔ.pdf": "902fc74dee0d973acd277196d314372f40c88eb94b693f70a1a8f9f5de0ed871",
+        "snapshots/ff1ea6480446dc66cf9bb02dea02e837ac40ddfb57665b16de80504f6e97abbd/CHUẨN ĐẦU RA NGÀNH KHOA HỌC MÁY TÍNH.pdf": "ff1ea6480446dc66cf9bb02dea02e837ac40ddfb57665b16de80504f6e97abbd",
+        "snapshots/fc04a945626ff83319c19d0032fcf33fe8559a637bb1d88d29963d201c8ad847/Khoa CNTT.pdf": "fc04a945626ff83319c19d0032fcf33fe8559a637bb1d88d29963d201c8ad847",
+        "snapshots/8e54b7b6039903ad6064f563070248d07cd02154556d51bdb03d17708925eb42/cong trinh thuy.pdf": "8e54b7b6039903ad6064f563070248d07cd02154556d51bdb03d17708925eb42",
+        "snapshots/f05ef7906ff90bbb36e561eb3df481cb78158e1729bca70d756c1de5c90c7d4b/Khoa CT.pdf": "f05ef7906ff90bbb36e561eb3df481cb78158e1729bca70d756c1de5c90c7d4b",
+        "snapshots/0be1a2b1872be837432a6ecfbed26b3787f57c5c97f9f4faff12126e15dd8659/Khoa co khi.pdf": "0be1a2b1872be837432a6ecfbed26b3787f57c5c97f9f4faff12126e15dd8659",
+        "snapshots/fbca38976a252562ba0234c22ff0d9870cb834008a1ad91593206361d2604311/Khoa co ban.pdf": "fbca38976a252562ba0234c22ff0d9870cb834008a1ad91593206361d2604311",
+        "snapshots/a998c195e25fe5607cd754b8114bd2b59dece240db9b0eed61b7fb1d25ae1a05/Khoa KTXD.pdf": "a998c195e25fe5607cd754b8114bd2b59dece240db9b0eed61b7fb1d25ae1a05",
+        "snapshots/73f1de6fcb55420c2427a105a9d2235bc2908ad5d1733c6e3abc2e464ae4c46e/11. Khoa DTQT.pdf": "73f1de6fcb55420c2427a105a9d2235bc2908ad5d1733c6e3abc2e464ae4c46e",
+        "snapshots/c267668dfe699481eadd5f2b574e533abfc0b83a546f971edd638585939434c5/1_ TUD.pdf": "c267668dfe699481eadd5f2b574e533abfc0b83a546f971edd638585939434c5",
+        "snapshots/724308caf1b559f9cdce6ae7e53d1df9335ae71fe46c66fcaa65de714b2eb21d/chuong-trinh-tien-tien.pdf": "724308caf1b559f9cdce6ae7e53d1df9335ae71fe46c66fcaa65de714b2eb21d",
+        "snapshots/81e1c150a4a05c73dc1ab44b61a6e82c749e678124c9b295b736315b42d6b02d/clc-cntt.pdf": "81e1c150a4a05c73dc1ab44b61a6e82c749e678124c9b295b736315b42d6b02d",
+        "snapshots/a82deb42eeb99bc9d6c21c93f26bb48e324885e81e00ef275942cb8116d47d4c/co-khi-o-to-va.pdf": "a82deb42eeb99bc9d6c21c93f26bb48e324885e81e00ef275942cb8116d47d4c"
+      }
+    },
+    "recursive": {
+      "schema_version": 1,
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "index_version": "b_d1303694380dd1af5cdec379",
+      "dataset_version": "dataset_6cbe41d3f96365773f95279a",
+      "chunk_set_id": "cs_d1303694380dd1af5cdec379",
+      "strategy": "recursive",
+      "created_at": "2026-11-08T17:19:32.661756+00:00",
+      "state": "qa_passed",
+      "config": {
+        "strategy": "recursive",
+        "chunk_size": 700,
+        "overlap": 100,
+        "unit": "unicode_characters",
+        "pipeline_revision": "utc-rag-0.1.0",
+        "bm25": {
+          "k1": 1.5,
+          "b": 0.75,
+          "idf": "log(1+(N-df+0.5)/(df+0.5))",
+          "tokenizer": "nfc_unicode_codes_v1"
+        },
+        "retrieval": {
+          "bm25_k": 8,
+          "faiss_k": 8,
+          "rrf_k": 60,
+          "context_k": 5
+        }
+      },
+      "embedding": {
+        "model": "intfloat/multilingual-e5-small",
+        "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+        "tokenizer_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+        "pooling": "mean",
+        "query_instruction": "query: ",
+        "document_instruction": "passage: ",
+        "dimension": 384,
+        "metric": "inner_product",
+        "normalize": true,
+        "device": "cpu",
+        "max_tokens": 512
+      },
+      "coverage": {
+        "total_files": 75,
+        "eligible_files": 32,
+        "blocked_files": 41,
+        "duplicate_files": 2,
+        "issues": [
+          {
+            "relative_path": "Cac_chuyen_nganh_dao_tao_gtvt.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_ed49b61ef0e4c8db9dac7cf4"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2018/13_ KINH TẾ XÂY DỰNG.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_39c11917055b5e90aabe4775"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2018/1_ TOÁN ỨNG DỤNG.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_c675370f3382344c5fd8dadd"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/10_ KIẾN TRÚC.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_128c0201bb1982d7c9671774"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/11_ KỸ THUẬT XÂY DỰNG.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_af797c85b0af9bf09b25acde"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/12_ CÔNG NGHỆ KỸ THUẬT GIAO THÔNG.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_86b883bb289f21fe257104b3"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/15_ KẾ TOÁN.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_57b07b2b015618c2501d7c08"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/16_ KHAI THÁC VẬN TẢI.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_d28a9742e6df488fa8d921be"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/17_ KINH TẾ VẬN TẢI.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_3b64cdf98013f0849a853663"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/19_ LOGISTICS VÀ QUẢN LÝ CHUỖI CUNG ỨNG.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_ab10c04696ffd2fe47ce1846"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/19_Kinh tế.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_7a704a7977145c731dac39bd"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/20_ QUẢN TRỊ DVDL&LH.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_92cfba4ae81aa3d0993525f6"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/21_ QUẢN TRỊ KINH DOANH.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_02a2c9fe786fd46f689b714b"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/22_ TÀI CHÍNH NGÂN HÀNG.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_7ef6ade4a296a07a585d2785"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/23_ KỸ THUẬT CƠ ĐIỆN TỬ.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_eac0351a85546212b5cc9937"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/24_ KỸ THUẬT CƠ KHÍ ĐỘNG LỰC.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_1a7ca75a143f76863f32cdd0"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/26_ KỸ THUẬT NHIỆT.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a14006a42595a87993aecc5f"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/2_ CÔNG NGHỆ THÔNG TIN.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_b570869d7b8d25dceb774abe"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/3_ KỸ THUẬT XÂY DỰNG CTGT.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_160b621b4c0750bb6c351c23"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/4_ CÔNG TRÌNH THUỶ.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a8edf7a0a37dc590d06fdf31"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/5_ KỸ THUẬT ĐIỆN TỬ VIỄN THÔNG.docx",
+            "step": "P1-03",
+            "reason": "Word requires a fixed-layout PDF and verified page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_96bb472b3dfb3079327ab6f8"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/6_ KỸ THUẬT ĐIỀU KHIỂN VÀ TĐH.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_3e34b1a66dfbc4d79ef9a6fa"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/7_ KỸ THUẬT ROBOT VÀ TRÍ TỤE NHÂN TẠO.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_5b14e8843aaaa604601f1602"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/8_ KỸ THUẬT ĐIỆN.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_993190fe2a0c7bf8c5c465ce"
+          },
+          {
+            "relative_path": "Chuan_dau_ra/Nam_2021/9_ HỆ THỐNG GIAO THÔNG THÔNG MINH.doc",
+            "step": "P1-03",
+            "reason": "Legacy Word requires conversion and verified PDF page mapping",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_f4cdfc0f8b0010199d64b291"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2018/Khoa Môi trường & ATGT/Khoa MTATGT.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_79e75b404d58c6f8bc0862b8"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2018/Khoa Quản lý xây dựng/Khoa QLXD.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_5ced9028636ff92bf75f4ab6"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2018/Khoa Vận tải - Kinh tế/Khoa VTKT.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_5391408bd51fd546038cdbd2"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2018/Khoa Điện - Điện tử/Khoa dien tu.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_23861277ff6aa9a07054452c"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Công nghệ thông tin/CNTT.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_8692e5034a8e2a3d1b4f6bd3"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Công trình/Công trình(2).rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_653469c14271694b77c1e66a"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Cơ khí/Khoa Cơ khí.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_fa5180890d8d2fd8f683d442"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Kỹ thuật xây dựng/Khoa KTXD.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_58f65d2925f728a10bcbed7e"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Môi trường & ATGT/Khoa MT.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_49c68d2653c92ddcc65bbdea"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Quản lý xây dựng/QLXD.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_fe3dd64560e0324e2dcbe7c3"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Vận tải - Kinh tế/CTĐT các ngành thuộc khoa VTKT.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_820d6acf1d692407ce077753"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Điện - Điện tử/Khoa Đ_ĐT.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_b19307c3038de7cd1745a6a2"
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Đào tạo Quốc tế/chuong-trinh-tien-tien-KTXD/chuong-trinh-tien-tien.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_724308caf1b559f9cdce6ae7",
+            "pdf_page": 1
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Đào tạo Quốc tế/chuong-trinh-tien-tien-KTXD/chuong-trinh-tien-tien.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_724308caf1b559f9cdce6ae7",
+            "pdf_page": 2
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Đào tạo Quốc tế/chuong-trinh-tien-tien-KTXD/chuong-trinh-tien-tien.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_724308caf1b559f9cdce6ae7",
+            "pdf_page": 3
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Đào tạo Quốc tế/chuong-trinh-tien-tien-KTXD/chuong-trinh-tien-tien.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_724308caf1b559f9cdce6ae7",
+            "pdf_page": 4
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Đào tạo Quốc tế/chuong-trinh-tien-tien-KTXD/chuong-trinh-tien-tien.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_724308caf1b559f9cdce6ae7",
+            "pdf_page": 5
+          },
+          {
+            "relative_path": "Chuong_trinh_dao_tao/Nam_2021/Khoa Đào tạo Quốc tế/QD KHUNG CHUONG TRINH CLC.rar",
+            "step": "P1-03",
+            "reason": "RAR requires safe entry enumeration, extraction and per-entry review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_7613214123b75a24be35854f"
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 1
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 2
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 3
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 4
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 5
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 6
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 7
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 8
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 9
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/clc-cntt.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_81e1c150a4a05c73dc1ab44b",
+            "pdf_page": 10
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 1
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 2
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 3
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 4
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 5
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 6
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 7
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 8
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 9
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 10
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 11
+          },
+          {
+            "relative_path": "Quyết định Chuẩn đầu ra và Chương trình Đào tạo-2024/co-khi-o-to-va.pdf",
+            "step": "P1-04",
+            "reason": "Image page needs OCR and source review",
+            "severity": "blocking",
+            "status": "needs_review",
+            "file_id": "file_a82deb42eeb99bc9d6c21c93",
+            "pdf_page": 12
+          }
+        ],
+        "total_pages": 386,
+        "eligible_pages": 359,
+        "blocked_pages": 27,
+        "unique_files": 73,
+        "incomplete_files": 0
+      },
+      "chunk_count": 1068,
+      "document_count": 32,
+      "checksums": {
+        "bm25.json": "ccf33f819fc876b460431c40298772348db68f9ad947834709ba9e5166c50667",
+        "chunks.json": "fff71c15a4e483b6aefc10a4068dca4579264717df33626bb7acd16957688b37",
+        "dataset.json": "1e673a64fa1658e27850cdaa5a4c6411457c4d4b5ca37f5938963798d11a0ebc",
+        "index.faiss": "e6df23b62883fd1b5f3cd85ac196bdf8214a8e623bf9c996fac55c93fb4db5bf",
+        "vectors.npy": "69924386e9a1daa03b17fe7cfdff0f674ca91bc6b33f0a6a10341da8e168b8be",
+        "vector_ids.json": "a1b7ae37a31dc4049293490d490ae6267c58d8f61fc2c8993161307a01d6a771"
+      },
+      "source_checksums": {
+        "snapshots/90f39c210fbffd560ea18a2e7786a0b3cab1238d87705d0f4ee28330798bdbac/chuan-dau-ra-trinh-do-cu-nhan.pdf": "90f39c210fbffd560ea18a2e7786a0b3cab1238d87705d0f4ee28330798bdbac",
+        "snapshots/828ac9132de4e18ddd4019cc97f2813b8c1c87fffd887e71eb6245481704a82d/1_ CNTT_UTC_2018.pdf": "828ac9132de4e18ddd4019cc97f2813b8c1c87fffd887e71eb6245481704a82d",
+        "snapshots/834ec704068ddd79523ceadf4aac12884f491d89482601fe0a5144e69bb34cce/1_ Công nghệ KTGT - KTATGT_2018.pdf": "834ec704068ddd79523ceadf4aac12884f491d89482601fe0a5144e69bb34cce",
+        "snapshots/fed8046a41e8bbd31456b1129b91935b3d6c3c72aea26afc56340ca03cf344d9/1_ Cơ khí Động lực.pdf": "fed8046a41e8bbd31456b1129b91935b3d6c3c72aea26afc56340ca03cf344d9",
+        "snapshots/7952c025561c4dd91973e64fbfd1effd91a312d0e28bcc18eb9d3f8f87afc4db/1_ Ke toan.pdf": "7952c025561c4dd91973e64fbfd1effd91a312d0e28bcc18eb9d3f8f87afc4db",
+        "snapshots/5b74370ff07b6201d060b8ed15599a6b40c4786eb00f8927d314a8350db44c12/1_ Kỹ thuật ĐTVT.pdf": "5b74370ff07b6201d060b8ed15599a6b40c4786eb00f8927d314a8350db44c12",
+        "snapshots/34a0a39e0e6cc095f43efce9ff83c1e48b0a67d67fe67c89542929b84255aae2/1_ QLXD.pdf": "34a0a39e0e6cc095f43efce9ff83c1e48b0a67d67fe67c89542929b84255aae2",
+        "snapshots/596343347763a82f54b431df29ff384b4fce7fb004e14c5dee3c652cbcd97d27/1_ XDCTT_2018.pdf": "596343347763a82f54b431df29ff384b4fce7fb004e14c5dee3c652cbcd97d27",
+        "snapshots/6d51c53beb88a4e2b26854686931dc9ff664a47e7d62a55e5ef60df2932c4805/1_KỸ THUẬT XÂY DỰNG CTGT.pdf": "6d51c53beb88a4e2b26854686931dc9ff664a47e7d62a55e5ef60df2932c4805",
+        "snapshots/ed1137c280f1c567735f807774edf2d4166d17262b7c8516b119e1e6e9920618/2_ DK&TDHGT.pdf": "ed1137c280f1c567735f807774edf2d4166d17262b7c8516b119e1e6e9920618",
+        "snapshots/1349c3469be18f3e41b670589d8296dc21e2a6cc4c1abee4f4d32c55038004d9/2_ Khai thác vận tải.pdf": "1349c3469be18f3e41b670589d8296dc21e2a6cc4c1abee4f4d32c55038004d9",
+        "snapshots/9ea83a366b5a78c1ec413ee350183482a0f20d9cd58fabd87263f0f083621cd7/2_ KTMTGT.pdf": "9ea83a366b5a78c1ec413ee350183482a0f20d9cd58fabd87263f0f083621cd7",
+        "snapshots/518f007076b30bdba5f929e4d31b7445ff6202b33aa56ad53c78830b73b3eadd/2_ Kỹ thuật co khi.pdf": "518f007076b30bdba5f929e4d31b7445ff6202b33aa56ad53c78830b73b3eadd",
+        "snapshots/e8781028bf408662580ef5d19953fb3f6b6ab1ae93af0806115a045f8da0b540/3_ Kinh tế Vận tải.pdf": "e8781028bf408662580ef5d19953fb3f6b6ab1ae93af0806115a045f8da0b540",
+        "snapshots/8569bdbdf36a06ec9b35957f008ccbd4e7777c92e413fc9e80aa09cd735e601f/3_ Kỹ thuật nhiệt.pdf": "8569bdbdf36a06ec9b35957f008ccbd4e7777c92e413fc9e80aa09cd735e601f",
+        "snapshots/23b3629d3733ddbb33d9b194da0e62592c895e3edffe98f1bceda4fff196b0a5/3_ Kỹ thuật điện.pdf": "23b3629d3733ddbb33d9b194da0e62592c895e3edffe98f1bceda4fff196b0a5",
+        "snapshots/983b3a13b900c3bcb6cfe3fe78cf96aba700caaf16a156cb0325a985f0387d36/4_ Kinh tế.pdf": "983b3a13b900c3bcb6cfe3fe78cf96aba700caaf16a156cb0325a985f0387d36",
+        "snapshots/01da6799ce7e225354fe26463110ca798f9630e7d20771b76243cad6a567af1f/4_ Kỹ thuật Ô tô.pdf": "01da6799ce7e225354fe26463110ca798f9630e7d20771b76243cad6a567af1f",
+        "snapshots/97e8a141ed1b9ca048ab3763fa01434d024f8d6e31057177b419304025328bdc/5_ Quản trị kinh doanh.pdf": "97e8a141ed1b9ca048ab3763fa01434d024f8d6e31057177b419304025328bdc",
+        "snapshots/09d10c8f2943a508ffe8b6ba1cc4804cd881cfb551aee8818079b51dd48aa351/Kỹ thuật xây dựng.pdf": "09d10c8f2943a508ffe8b6ba1cc4804cd881cfb551aee8818079b51dd48aa351",
+        "snapshots/9f74bea152efb5e762a47178dc665662a8566452aad293b24d9baa839ddf40a7/14_ QUẢN LÝ XÂY DỰNG.pdf": "9f74bea152efb5e762a47178dc665662a8566452aad293b24d9baa839ddf40a7",
+        "snapshots/f8b42fec3f3940b42e1769285664ebb8bd1915bb91c83f3b824038a00eb5c9e3/25_ KỸ THUẬT CƠ KHÍ.pdf": "f8b42fec3f3940b42e1769285664ebb8bd1915bb91c83f3b824038a00eb5c9e3",
+        "snapshots/902fc74dee0d973acd277196d314372f40c88eb94b693f70a1a8f9f5de0ed871/27_ KỸ THUẬT Ô TÔ.pdf": "902fc74dee0d973acd277196d314372f40c88eb94b693f70a1a8f9f5de0ed871",
+        "snapshots/ff1ea6480446dc66cf9bb02dea02e837ac40ddfb57665b16de80504f6e97abbd/CHUẨN ĐẦU RA NGÀNH KHOA HỌC MÁY TÍNH.pdf": "ff1ea6480446dc66cf9bb02dea02e837ac40ddfb57665b16de80504f6e97abbd",
+        "snapshots/fc04a945626ff83319c19d0032fcf33fe8559a637bb1d88d29963d201c8ad847/Khoa CNTT.pdf": "fc04a945626ff83319c19d0032fcf33fe8559a637bb1d88d29963d201c8ad847",
+        "snapshots/8e54b7b6039903ad6064f563070248d07cd02154556d51bdb03d17708925eb42/cong trinh thuy.pdf": "8e54b7b6039903ad6064f563070248d07cd02154556d51bdb03d17708925eb42",
+        "snapshots/f05ef7906ff90bbb36e561eb3df481cb78158e1729bca70d756c1de5c90c7d4b/Khoa CT.pdf": "f05ef7906ff90bbb36e561eb3df481cb78158e1729bca70d756c1de5c90c7d4b",
+        "snapshots/0be1a2b1872be837432a6ecfbed26b3787f57c5c97f9f4faff12126e15dd8659/Khoa co khi.pdf": "0be1a2b1872be837432a6ecfbed26b3787f57c5c97f9f4faff12126e15dd8659",
+        "snapshots/fbca38976a252562ba0234c22ff0d9870cb834008a1ad91593206361d2604311/Khoa co ban.pdf": "fbca38976a252562ba0234c22ff0d9870cb834008a1ad91593206361d2604311",
+        "snapshots/a998c195e25fe5607cd754b8114bd2b59dece240db9b0eed61b7fb1d25ae1a05/Khoa KTXD.pdf": "a998c195e25fe5607cd754b8114bd2b59dece240db9b0eed61b7fb1d25ae1a05",
+        "snapshots/73f1de6fcb55420c2427a105a9d2235bc2908ad5d1733c6e3abc2e464ae4c46e/11. Khoa DTQT.pdf": "73f1de6fcb55420c2427a105a9d2235bc2908ad5d1733c6e3abc2e464ae4c46e",
+        "snapshots/c267668dfe699481eadd5f2b574e533abfc0b83a546f971edd638585939434c5/1_ TUD.pdf": "c267668dfe699481eadd5f2b574e533abfc0b83a546f971edd638585939434c5",
+        "snapshots/724308caf1b559f9cdce6ae7e53d1df9335ae71fe46c66fcaa65de714b2eb21d/chuong-trinh-tien-tien.pdf": "724308caf1b559f9cdce6ae7e53d1df9335ae71fe46c66fcaa65de714b2eb21d",
+        "snapshots/81e1c150a4a05c73dc1ab44b61a6e82c749e678124c9b295b736315b42d6b02d/clc-cntt.pdf": "81e1c150a4a05c73dc1ab44b61a6e82c749e678124c9b295b736315b42d6b02d",
+        "snapshots/a82deb42eeb99bc9d6c21c93f26bb48e324885e81e00ef275942cb8116d47d4c/co-khi-o-to-va.pdf": "a82deb42eeb99bc9d6c21c93f26bb48e324885e81e00ef275942cb8116d47d4c"
+      }
+    }
+  },
+  "conditions": {
+    "top_k": 3,
+    "precision_denominator": 3,
+    "recall_unit": "strategy_specific_relevant_chunk",
+    "evidence_coverage_unit": "unique_source_evidence",
+    "relevance_rule": "same file/page and full half-open character span coverage OR exact quote after NFC/whitespace normalization",
+    "multipage_quote_rule": "requires per-source-span text; no quote attribution from combined multi-page text",
+    "unmapped_gold_rule": "reported explicitly; recall is null when there are no relevant chunks",
+    "diagnostic_rule": "no-gold diagnostics excluded from aggregate retrieval metrics; expected answer status is not evaluated",
+    "answer_quality_evaluated": false
+  },
+  "summary": {
+    "fixed": {
+      "questions": 17,
+      "questions_with_gold_evidence": 15,
+      "unmapped_evidence_units": 1,
+      "precision_at_3": 0.4,
+      "recall_at_3": 0.9333333333333333,
+      "evidence_coverage_at_3": 0.9
+    },
+    "recursive": {
+      "questions": 17,
+      "questions_with_gold_evidence": 15,
+      "unmapped_evidence_units": 0,
+      "precision_at_3": 0.5333333333333333,
+      "recall_at_3": 0.9555555555555556,
+      "evidence_coverage_at_3": 0.9666666666666667
+    }
+  },
+  "results": [
+    {
+      "question_id": "KW01",
+      "category": "keyword",
+      "query": "Mã ngành Công nghệ thông tin trong tài liệu là gì?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "fixed",
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_d6866d2e54f920f92e7bb6dc1d54e5de",
+        "chunk_cfff7d4062c19e4bd45c188d96218d16",
+        "chunk_677300a88e2595d0063a6781fb1a21d0"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_d6866d2e54f920f92e7bb6dc1d54e5de"
+      ],
+      "relevant_chunk_count": 1,
+      "hits_at_3": 1,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "KW02",
+      "category": "keyword",
+      "query": "Thời gian đào tạo ngành Công nghệ thông tin là bao lâu?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "fixed",
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_d6866d2e54f920f92e7bb6dc1d54e5de",
+        "chunk_677300a88e2595d0063a6781fb1a21d0",
+        "chunk_dcab87f53f507ec7a6e564bc5d988de6"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_d6866d2e54f920f92e7bb6dc1d54e5de"
+      ],
+      "relevant_chunk_count": 1,
+      "hits_at_3": 1,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "KW03",
+      "category": "keyword",
+      "query": "Chuẩn kỹ năng thuyết trình, giao tiếp và làm việc theo nhóm quy định gì?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "fixed",
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_cf603bf9acdc20ff4486caa23321c969",
+        "chunk_60db2d441ba93b850d2e97b7a3da44ed",
+        "chunk_c5c98e21286916e8b64b709d8e26c4da"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_60db2d441ba93b850d2e97b7a3da44ed"
+      ],
+      "relevant_chunk_count": 1,
+      "hits_at_3": 1,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "KW04",
+      "category": "keyword",
+      "query": "Tài liệu nêu khả năng học tiếp trình độ thạc sĩ, tiến sĩ trong nước như thế nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "fixed",
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_cfff7d4062c19e4bd45c188d96218d16",
+        "chunk_cf603bf9acdc20ff4486caa23321c969",
+        "chunk_7911e6e3040146ea8772a2aee63bb45c"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_cfff7d4062c19e4bd45c188d96218d16"
+      ],
+      "relevant_chunk_count": 1,
+      "hits_at_3": 1,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "KW05",
+      "category": "keyword",
+      "query": "CDIO và ACM được nêu trong các chuẩn tham khảo nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "fixed",
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.6666666666666666,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_677300a88e2595d0063a6781fb1a21d0",
+        "chunk_cfff7d4062c19e4bd45c188d96218d16",
+        "chunk_60db2d441ba93b850d2e97b7a3da44ed"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_677300a88e2595d0063a6781fb1a21d0",
+        "chunk_cfff7d4062c19e4bd45c188d96218d16"
+      ],
+      "relevant_chunk_count": 2,
+      "hits_at_3": 2,
+      "gold_evidence_count": 2,
+      "covered_evidence_indices": [
+        0,
+        1
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SE01",
+      "category": "semantic",
+      "query": "Người học phải nắm những gì về viết mã và xây dựng thuật toán?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "fixed",
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_7911e6e3040146ea8772a2aee63bb45c",
+        "chunk_60db2d441ba93b850d2e97b7a3da44ed",
+        "chunk_677300a88e2595d0063a6781fb1a21d0"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_7911e6e3040146ea8772a2aee63bb45c"
+      ],
+      "relevant_chunk_count": 1,
+      "hits_at_3": 1,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SE02",
+      "category": "semantic",
+      "query": "Khi đi làm, sinh viên cần có thái độ nghề nghiệp và trách nhiệm ra sao?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "fixed",
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_cf603bf9acdc20ff4486caa23321c969",
+        "chunk_dcab87f53f507ec7a6e564bc5d988de6",
+        "chunk_cfff7d4062c19e4bd45c188d96218d16"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_cf603bf9acdc20ff4486caa23321c969"
+      ],
+      "relevant_chunk_count": 1,
+      "hits_at_3": 1,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SE03",
+      "category": "semantic",
+      "query": "Sau khi ra trường có thể học thêm một bằng đại học ở lĩnh vực khác không?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "fixed",
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_cfff7d4062c19e4bd45c188d96218d16",
+        "chunk_dcab87f53f507ec7a6e564bc5d988de6",
+        "chunk_677300a88e2595d0063a6781fb1a21d0"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_cfff7d4062c19e4bd45c188d96218d16"
+      ],
+      "relevant_chunk_count": 1,
+      "hits_at_3": 1,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SE04",
+      "category": "semantic",
+      "query": "Chuẩn đầu ra mô tả khả năng theo học chương trình sau đại học ở nước ngoài như thế nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "fixed",
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_cfff7d4062c19e4bd45c188d96218d16",
+        "chunk_677300a88e2595d0063a6781fb1a21d0",
+        "chunk_cf603bf9acdc20ff4486caa23321c969"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_cfff7d4062c19e4bd45c188d96218d16"
+      ],
+      "relevant_chunk_count": 1,
+      "hits_at_3": 1,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SE05",
+      "category": "semantic",
+      "query": "Những kiến thức nền tảng nào được dùng cho học tập và nghiên cứu CNTT?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "fixed",
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_7911e6e3040146ea8772a2aee63bb45c",
+        "chunk_cfff7d4062c19e4bd45c188d96218d16",
+        "chunk_60db2d441ba93b850d2e97b7a3da44ed"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_7911e6e3040146ea8772a2aee63bb45c"
+      ],
+      "relevant_chunk_count": 1,
+      "hits_at_3": 1,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SY01",
+      "category": "synthesis",
+      "query": "Tài liệu ghi mã ngành nào và yêu cầu kỹ năng thuyết trình, giao tiếp, làm việc nhóm ra sao?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "fixed",
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 0.5,
+      "evidence_coverage_at_3": 0.5,
+      "top3_chunk_ids": [
+        "chunk_60db2d441ba93b850d2e97b7a3da44ed",
+        "chunk_cf603bf9acdc20ff4486caa23321c969",
+        "chunk_677300a88e2595d0063a6781fb1a21d0"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_60db2d441ba93b850d2e97b7a3da44ed",
+        "chunk_d6866d2e54f920f92e7bb6dc1d54e5de"
+      ],
+      "relevant_chunk_count": 2,
+      "hits_at_3": 1,
+      "gold_evidence_count": 2,
+      "covered_evidence_indices": [
+        1
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SY02",
+      "category": "synthesis",
+      "query": "Kiến thức lập trình, thuật toán cần nắm liên hệ với vị trí kỹ sư phần mềm sau tốt nghiệp như thế nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "fixed",
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.6666666666666666,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_dcab87f53f507ec7a6e564bc5d988de6",
+        "chunk_7911e6e3040146ea8772a2aee63bb45c",
+        "chunk_60db2d441ba93b850d2e97b7a3da44ed"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_7911e6e3040146ea8772a2aee63bb45c",
+        "chunk_dcab87f53f507ec7a6e564bc5d988de6"
+      ],
+      "relevant_chunk_count": 2,
+      "hits_at_3": 2,
+      "gold_evidence_count": 2,
+      "covered_evidence_indices": [
+        0,
+        1
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SY03",
+      "category": "synthesis",
+      "query": "Chuẩn kiến thức mạng máy tính và vị trí tư vấn, quản trị hệ thống sau tốt nghiệp gồm những nội dung nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "fixed",
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 0.5,
+      "top3_chunk_ids": [
+        "chunk_60db2d441ba93b850d2e97b7a3da44ed",
+        "chunk_dcab87f53f507ec7a6e564bc5d988de6",
+        "chunk_c5c98e21286916e8b64b709d8e26c4da"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_dcab87f53f507ec7a6e564bc5d988de6"
+      ],
+      "relevant_chunk_count": 1,
+      "hits_at_3": 1,
+      "gold_evidence_count": 2,
+      "covered_evidence_indices": [
+        1
+      ],
+      "unmapped_evidence_indices": [
+        0
+      ],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SY04",
+      "category": "synthesis",
+      "query": "Tài liệu yêu cầu tinh thần học hỏi ra sao và nêu khả năng học tiếp thạc sĩ, tiến sĩ trong nước như thế nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "fixed",
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.6666666666666666,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_cfff7d4062c19e4bd45c188d96218d16",
+        "chunk_cf603bf9acdc20ff4486caa23321c969",
+        "chunk_677300a88e2595d0063a6781fb1a21d0"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_cf603bf9acdc20ff4486caa23321c969",
+        "chunk_cfff7d4062c19e4bd45c188d96218d16"
+      ],
+      "relevant_chunk_count": 2,
+      "hits_at_3": 2,
+      "gold_evidence_count": 2,
+      "covered_evidence_indices": [
+        0,
+        1
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SY05",
+      "category": "synthesis",
+      "query": "Thời gian đào tạo là bao lâu và sau tốt nghiệp có thể học bằng đại học thứ hai ở những nhóm ngành nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "fixed",
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 0.5,
+      "evidence_coverage_at_3": 0.5,
+      "top3_chunk_ids": [
+        "chunk_cfff7d4062c19e4bd45c188d96218d16",
+        "chunk_dcab87f53f507ec7a6e564bc5d988de6",
+        "chunk_677300a88e2595d0063a6781fb1a21d0"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_cfff7d4062c19e4bd45c188d96218d16",
+        "chunk_d6866d2e54f920f92e7bb6dc1d54e5de"
+      ],
+      "relevant_chunk_count": 2,
+      "hits_at_3": 1,
+      "gold_evidence_count": 2,
+      "covered_evidence_indices": [
+        1
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "DG01",
+      "category": "diagnostic",
+      "query": "Học phí ngành CNTT kỳ học năm 2026 là bao nhiêu?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "fixed",
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "expected_status": "insufficient_evidence",
+      "response_status_evaluated": false,
+      "precision_at_3": 0.0,
+      "recall_at_3": null,
+      "evidence_coverage_at_3": null,
+      "top3_chunk_ids": [
+        "chunk_d6866d2e54f920f92e7bb6dc1d54e5de",
+        "chunk_cfff7d4062c19e4bd45c188d96218d16",
+        "chunk_dcab87f53f507ec7a6e564bc5d988de6"
+      ],
+      "relevant_chunk_ids": [],
+      "relevant_chunk_count": 0,
+      "hits_at_3": 0,
+      "gold_evidence_count": 0,
+      "covered_evidence_indices": [],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": false
+    },
+    {
+      "question_id": "DG02",
+      "category": "diagnostic",
+      "query": "Chuẩn đầu ra yêu cầu những kỹ năng nào?",
+      "filters": {},
+      "strategy": "fixed",
+      "bundle_id": "b_8684ab9bfc21961408ae78d0",
+      "expected_status": "clarification_required",
+      "response_status_evaluated": false,
+      "precision_at_3": 0.0,
+      "recall_at_3": null,
+      "evidence_coverage_at_3": null,
+      "top3_chunk_ids": [
+        "chunk_60db2d441ba93b850d2e97b7a3da44ed",
+        "chunk_8907b869955db2ae20d5a7db5cf9ef50",
+        "chunk_21045bfd20e79f6673f026ed741f1f3a"
+      ],
+      "relevant_chunk_ids": [],
+      "relevant_chunk_count": 0,
+      "hits_at_3": 0,
+      "gold_evidence_count": 0,
+      "covered_evidence_indices": [],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": false
+    },
+    {
+      "question_id": "KW01",
+      "category": "keyword",
+      "query": "Mã ngành Công nghệ thông tin trong tài liệu là gì?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "recursive",
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_1d1aa3de77b6766055dcf5ede54867c2",
+        "chunk_aebc0d54f5830012be89a5055c36491f",
+        "chunk_86adb5124629425f56a224bdcd988b2f"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_1d1aa3de77b6766055dcf5ede54867c2"
+      ],
+      "relevant_chunk_count": 1,
+      "hits_at_3": 1,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "KW02",
+      "category": "keyword",
+      "query": "Thời gian đào tạo ngành Công nghệ thông tin là bao lâu?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "recursive",
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_1d1aa3de77b6766055dcf5ede54867c2",
+        "chunk_86adb5124629425f56a224bdcd988b2f",
+        "chunk_aebc0d54f5830012be89a5055c36491f"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_1d1aa3de77b6766055dcf5ede54867c2"
+      ],
+      "relevant_chunk_count": 1,
+      "hits_at_3": 1,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "KW03",
+      "category": "keyword",
+      "query": "Chuẩn kỹ năng thuyết trình, giao tiếp và làm việc theo nhóm quy định gì?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "recursive",
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.6666666666666666,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_486c0fa036e58f0cee74c5bdefbeffa4",
+        "chunk_1104a6cbfbdbf645909c4111befc9941",
+        "chunk_4e3823e90bf5e343b2ec7f571d037864"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_1104a6cbfbdbf645909c4111befc9941",
+        "chunk_486c0fa036e58f0cee74c5bdefbeffa4"
+      ],
+      "relevant_chunk_count": 2,
+      "hits_at_3": 2,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "KW04",
+      "category": "keyword",
+      "query": "Tài liệu nêu khả năng học tiếp trình độ thạc sĩ, tiến sĩ trong nước như thế nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "recursive",
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_4f1832d1616ce93807dcd2c881f2c66c",
+        "chunk_6f9b3122c882a2cefa336bbc80a077dd",
+        "chunk_486c0fa036e58f0cee74c5bdefbeffa4"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_4f1832d1616ce93807dcd2c881f2c66c"
+      ],
+      "relevant_chunk_count": 1,
+      "hits_at_3": 1,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "KW05",
+      "category": "keyword",
+      "query": "CDIO và ACM được nêu trong các chuẩn tham khảo nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "recursive",
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.6666666666666666,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_aebc0d54f5830012be89a5055c36491f",
+        "chunk_4f1832d1616ce93807dcd2c881f2c66c",
+        "chunk_486c0fa036e58f0cee74c5bdefbeffa4"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_4f1832d1616ce93807dcd2c881f2c66c",
+        "chunk_aebc0d54f5830012be89a5055c36491f"
+      ],
+      "relevant_chunk_count": 2,
+      "hits_at_3": 2,
+      "gold_evidence_count": 2,
+      "covered_evidence_indices": [
+        0,
+        1
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SE01",
+      "category": "semantic",
+      "query": "Người học phải nắm những gì về viết mã và xây dựng thuật toán?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "recursive",
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.6666666666666666,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_4e3823e90bf5e343b2ec7f571d037864",
+        "chunk_6f9b3122c882a2cefa336bbc80a077dd",
+        "chunk_1104a6cbfbdbf645909c4111befc9941"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_4e3823e90bf5e343b2ec7f571d037864",
+        "chunk_6f9b3122c882a2cefa336bbc80a077dd"
+      ],
+      "relevant_chunk_count": 2,
+      "hits_at_3": 2,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SE02",
+      "category": "semantic",
+      "query": "Khi đi làm, sinh viên cần có thái độ nghề nghiệp và trách nhiệm ra sao?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "recursive",
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_486c0fa036e58f0cee74c5bdefbeffa4",
+        "chunk_86adb5124629425f56a224bdcd988b2f",
+        "chunk_4f1832d1616ce93807dcd2c881f2c66c"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_486c0fa036e58f0cee74c5bdefbeffa4"
+      ],
+      "relevant_chunk_count": 1,
+      "hits_at_3": 1,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SE03",
+      "category": "semantic",
+      "query": "Sau khi ra trường có thể học thêm một bằng đại học ở lĩnh vực khác không?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "recursive",
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_4f1832d1616ce93807dcd2c881f2c66c",
+        "chunk_86adb5124629425f56a224bdcd988b2f",
+        "chunk_aebc0d54f5830012be89a5055c36491f"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_4f1832d1616ce93807dcd2c881f2c66c"
+      ],
+      "relevant_chunk_count": 1,
+      "hits_at_3": 1,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SE04",
+      "category": "semantic",
+      "query": "Chuẩn đầu ra mô tả khả năng theo học chương trình sau đại học ở nước ngoài như thế nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "recursive",
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_4f1832d1616ce93807dcd2c881f2c66c",
+        "chunk_aebc0d54f5830012be89a5055c36491f",
+        "chunk_6f9b3122c882a2cefa336bbc80a077dd"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_4f1832d1616ce93807dcd2c881f2c66c"
+      ],
+      "relevant_chunk_count": 1,
+      "hits_at_3": 1,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SE05",
+      "category": "semantic",
+      "query": "Những kiến thức nền tảng nào được dùng cho học tập và nghiên cứu CNTT?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "recursive",
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_6f9b3122c882a2cefa336bbc80a077dd",
+        "chunk_4f1832d1616ce93807dcd2c881f2c66c",
+        "chunk_86adb5124629425f56a224bdcd988b2f"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_6f9b3122c882a2cefa336bbc80a077dd"
+      ],
+      "relevant_chunk_count": 1,
+      "hits_at_3": 1,
+      "gold_evidence_count": 1,
+      "covered_evidence_indices": [
+        0
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SY01",
+      "category": "synthesis",
+      "query": "Tài liệu ghi mã ngành nào và yêu cầu kỹ năng thuyết trình, giao tiếp, làm việc nhóm ra sao?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "recursive",
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.6666666666666666,
+      "recall_at_3": 0.6666666666666666,
+      "evidence_coverage_at_3": 0.5,
+      "top3_chunk_ids": [
+        "chunk_1104a6cbfbdbf645909c4111befc9941",
+        "chunk_486c0fa036e58f0cee74c5bdefbeffa4",
+        "chunk_aebc0d54f5830012be89a5055c36491f"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_1104a6cbfbdbf645909c4111befc9941",
+        "chunk_1d1aa3de77b6766055dcf5ede54867c2",
+        "chunk_486c0fa036e58f0cee74c5bdefbeffa4"
+      ],
+      "relevant_chunk_count": 3,
+      "hits_at_3": 2,
+      "gold_evidence_count": 2,
+      "covered_evidence_indices": [
+        1
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SY02",
+      "category": "synthesis",
+      "query": "Kiến thức lập trình, thuật toán cần nắm liên hệ với vị trí kỹ sư phần mềm sau tốt nghiệp như thế nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "recursive",
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 1.0,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_86adb5124629425f56a224bdcd988b2f",
+        "chunk_6f9b3122c882a2cefa336bbc80a077dd",
+        "chunk_4e3823e90bf5e343b2ec7f571d037864"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_4e3823e90bf5e343b2ec7f571d037864",
+        "chunk_6f9b3122c882a2cefa336bbc80a077dd",
+        "chunk_86adb5124629425f56a224bdcd988b2f"
+      ],
+      "relevant_chunk_count": 3,
+      "hits_at_3": 3,
+      "gold_evidence_count": 2,
+      "covered_evidence_indices": [
+        0,
+        1
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SY03",
+      "category": "synthesis",
+      "query": "Chuẩn kiến thức mạng máy tính và vị trí tư vấn, quản trị hệ thống sau tốt nghiệp gồm những nội dung nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "recursive",
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.6666666666666666,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_1104a6cbfbdbf645909c4111befc9941",
+        "chunk_86adb5124629425f56a224bdcd988b2f",
+        "chunk_4e3823e90bf5e343b2ec7f571d037864"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_4e3823e90bf5e343b2ec7f571d037864",
+        "chunk_86adb5124629425f56a224bdcd988b2f"
+      ],
+      "relevant_chunk_count": 2,
+      "hits_at_3": 2,
+      "gold_evidence_count": 2,
+      "covered_evidence_indices": [
+        0,
+        1
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SY04",
+      "category": "synthesis",
+      "query": "Tài liệu yêu cầu tinh thần học hỏi ra sao và nêu khả năng học tiếp thạc sĩ, tiến sĩ trong nước như thế nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "recursive",
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.6666666666666666,
+      "recall_at_3": 0.6666666666666666,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_4f1832d1616ce93807dcd2c881f2c66c",
+        "chunk_aebc0d54f5830012be89a5055c36491f",
+        "chunk_486c0fa036e58f0cee74c5bdefbeffa4"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_486c0fa036e58f0cee74c5bdefbeffa4",
+        "chunk_4f1832d1616ce93807dcd2c881f2c66c",
+        "chunk_86adb5124629425f56a224bdcd988b2f"
+      ],
+      "relevant_chunk_count": 3,
+      "hits_at_3": 2,
+      "gold_evidence_count": 2,
+      "covered_evidence_indices": [
+        0,
+        1
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "SY05",
+      "category": "synthesis",
+      "query": "Thời gian đào tạo là bao lâu và sau tốt nghiệp có thể học bằng đại học thứ hai ở những nhóm ngành nào?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "recursive",
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "expected_status": null,
+      "response_status_evaluated": false,
+      "precision_at_3": 0.6666666666666666,
+      "recall_at_3": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "top3_chunk_ids": [
+        "chunk_4f1832d1616ce93807dcd2c881f2c66c",
+        "chunk_1d1aa3de77b6766055dcf5ede54867c2",
+        "chunk_aebc0d54f5830012be89a5055c36491f"
+      ],
+      "relevant_chunk_ids": [
+        "chunk_1d1aa3de77b6766055dcf5ede54867c2",
+        "chunk_4f1832d1616ce93807dcd2c881f2c66c"
+      ],
+      "relevant_chunk_count": 2,
+      "hits_at_3": 2,
+      "gold_evidence_count": 2,
+      "covered_evidence_indices": [
+        0,
+        1
+      ],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": true
+    },
+    {
+      "question_id": "DG01",
+      "category": "diagnostic",
+      "query": "Học phí ngành CNTT kỳ học năm 2026 là bao nhiêu?",
+      "filters": {
+        "program_version_id": "utc-cntt-cdr-828ac9132de4"
+      },
+      "strategy": "recursive",
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "expected_status": "insufficient_evidence",
+      "response_status_evaluated": false,
+      "precision_at_3": 0.0,
+      "recall_at_3": null,
+      "evidence_coverage_at_3": null,
+      "top3_chunk_ids": [
+        "chunk_1d1aa3de77b6766055dcf5ede54867c2",
+        "chunk_86adb5124629425f56a224bdcd988b2f",
+        "chunk_4f1832d1616ce93807dcd2c881f2c66c"
+      ],
+      "relevant_chunk_ids": [],
+      "relevant_chunk_count": 0,
+      "hits_at_3": 0,
+      "gold_evidence_count": 0,
+      "covered_evidence_indices": [],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": false
+    },
+    {
+      "question_id": "DG02",
+      "category": "diagnostic",
+      "query": "Chuẩn đầu ra yêu cầu những kỹ năng nào?",
+      "filters": {},
+      "strategy": "recursive",
+      "bundle_id": "b_d1303694380dd1af5cdec379",
+      "expected_status": "clarification_required",
+      "response_status_evaluated": false,
+      "precision_at_3": 0.0,
+      "recall_at_3": null,
+      "evidence_coverage_at_3": null,
+      "top3_chunk_ids": [
+        "chunk_5ec394e8a20230e42b750c4bc2e45b23",
+        "chunk_bb9ff2bdc2236d76bab57c5fb53d15ff",
+        "chunk_1104a6cbfbdbf645909c4111befc9941"
+      ],
+      "relevant_chunk_ids": [],
+      "relevant_chunk_count": 0,
+      "hits_at_3": 0,
+      "gold_evidence_count": 0,
+      "covered_evidence_indices": [],
+      "unmapped_evidence_indices": [],
+      "retrieval_scored": false
+    }
+  ]
+}
